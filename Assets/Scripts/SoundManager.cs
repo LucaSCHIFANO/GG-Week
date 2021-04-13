@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class SoundManager : MonoBehaviour
             foreach (Sound s in sounds)
             {
                 s.source = gameObject.AddComponent<AudioSource>();
+                s.source.outputAudioMixerGroup = Resources.Load<AudioMixerGroup>("Audio/MasterVolumeMixer");
                 s.source.clip = s.clip;
                 s.source.volume = s.volume;
                 s.source.pitch = s.pitch;
@@ -41,7 +43,18 @@ public class SoundManager : MonoBehaviour
         //Add the music to play at start
         Sound s = Array.Find(sounds, sound => sound.name == "Background");
         if (s == null) { return; }
-        s.source.Play();
+        s.source.Play();        
+        
+        //Sound s1 = Array.Find(sounds, sound => sound.name == "SoundEffectTest");
+        //if (s1 == null) { return; }
+        //s1.source.Play();
+        //Sound s2 = Array.Find(sounds, sound => sound.name == "EnvironmentTest");
+        //if (s2 == null) { return; }
+        //s2.source.Play();
+        //Sound s3 = Array.Find(sounds, sound => sound.name == "UITest");
+        //if (s3 == null) { return; }
+        //s3.source.Play();
+
     }
 
     //How to use : FindObjectOfType<SoundManager>().PlaySound(name);
@@ -61,6 +74,7 @@ public class SoundManager : MonoBehaviour
 public class Sound
 {
     public string name;
+    public SoundType type;
     public AudioClip clip;
     [Range(0f, 1f)]
     public float volume = 0.1f;
@@ -76,4 +90,11 @@ public class Sound
 
     [HideInInspector]
     public AudioSource source;
+}
+
+public enum SoundType{
+    MUSIC,
+    SOUNDEFFECT,
+    ENVIRONMENT,
+    UIEFFECT,
 }
