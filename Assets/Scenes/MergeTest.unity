@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &13817040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6429254974173085048, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+  m_PrefabInstance: {fileID: 479499905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e68d51a3312a047a2dea35547df39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &22977081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1547,10 +1558,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 315271994215063065, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: glass
+      value: 
+      objectReference: {fileID: 1152387010}
+    - target: {fileID: 6210097504992335587, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: duration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210097504992335587, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: flowchart
+      value: 
+      objectReference: {fileID: 2077227233}
+    - target: {fileID: 6210097504992335587, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: progressBar
+      value: 
+      objectReference: {fileID: 13817040}
+    - target: {fileID: 6429254973000231348, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6429254973214439628, guid: c179444bba5611149a838f3ca6427cca, type: 3}
       propertyPath: flowchart
       value: 
       objectReference: {fileID: 2077227233}
+    - target: {fileID: 6429254973214439634, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: m_Name
+      value: Controller
+      objectReference: {fileID: 0}
     - target: {fileID: 6429254973771743487, guid: c179444bba5611149a838f3ca6427cca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1638,6 +1673,26 @@ PrefabInstance:
     - target: {fileID: 6429254973771744003, guid: c179444bba5611149a838f3ca6427cca, type: 3}
       propertyPath: m_Name
       value: CanvasHUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429254974173085048, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: max
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429254974173085048, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: current
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429254974313189605, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: current
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429254974338486639, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429254974554867230, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c179444bba5611149a838f3ca6427cca, type: 3}
@@ -2082,6 +2137,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697442893}
   m_CullTransparentMesh: 1
+--- !u!1 &721094742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6429254973000231348, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+  m_PrefabInstance: {fileID: 479499905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &726034258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,17 +3579,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1660546688 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6429254973214439628, guid: c179444bba5611149a838f3ca6427cca, type: 3}
-  m_PrefabInstance: {fileID: 479499905}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401c528b81c71814e8f86c52b32d872d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1779144535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,25 +4258,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015536871}
   m_CullTransparentMesh: 1
---- !u!1 &2045931039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6429254973771744003, guid: c179444bba5611149a838f3ca6427cca, type: 3}
-  m_PrefabInstance: {fileID: 479499905}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2045931040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045931039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024a42d2de9ba0e4b93cd7f3841afe12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1660546688}
-  glass: {fileID: 1152387010}
 --- !u!1 &2055916892
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,6 +4800,8 @@ GameObject:
   - component: {fileID: 2077227355}
   - component: {fileID: 2077227357}
   - component: {fileID: 2077227358}
+  - component: {fileID: 2077227359}
+  - component: {fileID: 2077227360}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4790,11 +4822,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 43.615192, y: 387.33966}
+  scrollPos: {x: -190.26955, y: 467.91318}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 487
-  zoom: 0.9100001
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -4802,9 +4834,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2077227236}
+  - {fileID: 2077227286}
   selectedCommands:
-  - {fileID: 2077227297}
+  - {fileID: 2077227359}
   variables:
   - {fileID: 2077227275}
   - {fileID: 2077227282}
@@ -4812,6 +4844,7 @@ MonoBehaviour:
   - {fileID: 2077227356}
   - {fileID: 2077227362}
   - {fileID: 2077227358}
+  - {fileID: 2077227360}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -4865,7 +4898,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -116.760254
     y: 67.42178
-    width: 100.549446
+    width: 99.999985
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4904,9 +4937,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 241.78629
-    y: -72.36697
-    width: 74.17582
+    x: 240.47049
+    y: -73.24898
+    width: 74.99999
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5162,7 +5195,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -187.49294
     y: 205.7196
-    width: 74.17582
+    width: 74.99999
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5215,7 +5248,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -12.411789
     y: 205.7196
-    width: 64.28571
+    width: 64.47368
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5291,7 +5324,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -96.45419
     y: 344.01746
-    width: 66.48351
+    width: 65.78947
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5480,7 +5513,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -138.69641
     y: -72.30548
-    width: 141.20879
+    width: 139.47366
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5604,7 +5637,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 386.3962
     y: -12.528997
-    width: 96.15384
+    width: 94.73683
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5809,7 +5842,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 612.9369
     y: -76.34078
-    width: 85.16483
+    width: 84.21052
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7072,9 +7105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 392.21503
-    y: -145.89784
-    width: 88.46153
+    x: 385.63608
+    y: -148.52943
+    width: 88.15788
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7084,6 +7117,7 @@ MonoBehaviour:
   eventHandler: {fileID: 2077227288}
   commandList:
   - {fileID: 2077227289}
+  - {fileID: 2077227359}
   - {fileID: 2077227303}
   - {fileID: 2077227285}
   - {fileID: 2077227280}
@@ -8215,95 +8249,6 @@ MonoBehaviour:
         vector4Data:
           vector4Ref: {fileID: 0}
           vector4Val: {x: 0, y: 0, z: 0, w: 0}
-  - compareOperator: 5
-    anyVar:
-      variable: {fileID: 2077227358}
-      data:
-        animatorData:
-          animatorRef: {fileID: 0}
-          animatorVal: {fileID: 0}
-        audioSourceData:
-          audioSourceRef: {fileID: 0}
-          audioSourceVal: {fileID: 0}
-        booleanData:
-          booleanRef: {fileID: 0}
-          booleanVal: 0
-        collectionData:
-          collectionRef: {fileID: 0}
-          collectionVal: {fileID: 0}
-        collider2DData:
-          collider2DRef: {fileID: 0}
-          collider2DVal: {fileID: 0}
-        colliderData:
-          colliderRef: {fileID: 0}
-          colliderVal: {fileID: 0}
-        colorData:
-          colorRef: {fileID: 0}
-          colorVal: {r: 0, g: 0, b: 0, a: 0}
-        floatData:
-          floatRef: {fileID: 0}
-          floatVal: 0.5
-        gameObjectData:
-          gameObjectRef: {fileID: 0}
-          gameObjectVal: {fileID: 0}
-        integerData:
-          integerRef: {fileID: 0}
-          integerVal: 0
-        materialData:
-          materialRef: {fileID: 0}
-          materialVal: {fileID: 0}
-        matrix4x4Data:
-          matrix4x4Ref: {fileID: 0}
-          matrix4x4Val:
-            e00: 0
-            e01: 0
-            e02: 0
-            e03: 0
-            e10: 0
-            e11: 0
-            e12: 0
-            e13: 0
-            e20: 0
-            e21: 0
-            e22: 0
-            e23: 0
-            e30: 0
-            e31: 0
-            e32: 0
-            e33: 0
-        objectData:
-          objectRef: {fileID: 0}
-          objectVal: {fileID: 0}
-        quaternionData:
-          quaternionRef: {fileID: 0}
-          quaternionVal: {x: 0, y: 0, z: 0, w: 0}
-        rigidbody2DData:
-          rigidbody2DRef: {fileID: 0}
-          rigidbody2DVal: {fileID: 0}
-        rigidbodyData:
-          rigidbodyRef: {fileID: 0}
-          rigidbodyVal: {fileID: 0}
-        spriteData:
-          spriteRef: {fileID: 0}
-          spriteVal: {fileID: 0}
-        stringData:
-          stringRef: {fileID: 0}
-          stringVal: 
-        textureData:
-          textureRef: {fileID: 0}
-          textureVal: {fileID: 0}
-        transformData:
-          transformRef: {fileID: 0}
-          transformVal: {fileID: 0}
-        vector2Data:
-          vector2Ref: {fileID: 0}
-          vector2Val: {x: 0, y: 0}
-        vector3Data:
-          vector3Ref: {fileID: 0}
-          vector3Val: {x: 0, y: 0, z: 0}
-        vector4Data:
-          vector4Ref: {fileID: 0}
-          vector4Val: {x: 0, y: 0, z: 0, w: 0}
   compareOperator: 0
   anyVar:
     variable: {fileID: 0}
@@ -8771,7 +8716,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1000.6127
     y: 226.06355
-    width: 64.28571
+    width: 64.47368
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8806,7 +8751,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 730.4465
     y: 239.86102
-    width: 118.13186
+    width: 119.736824
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9115,7 +9060,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 428.0756
     y: 235.85487
-    width: 63.186813
+    width: 64.47368
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9465,7 +9410,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 610.13257
     y: 452.5579
-    width: 102.74725
+    width: 102.63156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9688,7 +9633,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 233.66086
     y: 445.49884
-    width: 111.53845
+    width: 110.5263
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9744,7 +9689,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 355.87442
     y: 409.02844
-    width: 117.03296
+    width: 118.421036
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9827,7 +9772,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 484.24918
     y: 411.3814
-    width: 113.73626
+    width: 113.157875
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11063,7 +11008,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 757.3694
     y: 547.8517
-    width: 86.26373
+    width: 85.526306
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11881,6 +11826,38 @@ MonoBehaviour:
   scope: 1
   key: Fill
   value: 0
+--- !u!114 &2077227359
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 215
+  indentLevel: 1
+  targetObject: {fileID: 721094742}
+  methodName: SetAffection
+  delay: 0
+--- !u!114 &2077227360
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705fa1ac97df74e3a84ff952ffd923f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Affection
+  value: 50
 --- !u!114 &2077227362
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14898,7 +14875,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1061.1193
     y: 424.79755
-    width: 65.38461
+    width: 65.78947
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
