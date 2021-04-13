@@ -27,7 +27,7 @@ public class ProgressBar : MonoBehaviour
 
     private void Start()
     {
-        current = min;
+        SetCurrentFill(current);
     }
     public void SetCurrentFill(float value)
     {
