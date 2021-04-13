@@ -8,14 +8,35 @@ public class AffectionBar : MonoBehaviour
     public ProgressBar progressBar;
     public float duration = 0.5f;
 
+    public Sprite heart;
+    public Sprite brokenHeart;
 
     public void SetAffection()
     {
-        float value = progressBar.current + flowchart.GetFloatVariable("Affection");
+        float valueToAdd = flowchart.GetFloatVariable("Affection");
+        float value = progressBar.current + valueToAdd;
         StartCoroutine(FillAnimation(value));
         Debug.Log("Affection Call Function");
+
+        if(valueToAdd > 0)
+        {
+            PlayPositiveFeedback();
+        }
+        else
+        {
+            PlayNegativeFeedback();
+        }
     }
 
+    public void PlayPositiveFeedback()
+    {
+
+    }
+
+    public void PlayNegativeFeedback()
+    {
+
+    }
     IEnumerator FillAnimation(float newValue)
     {
         float timer = 0.0f;
