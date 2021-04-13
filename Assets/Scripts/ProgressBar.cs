@@ -27,13 +27,15 @@ public class ProgressBar : MonoBehaviour
 
     public void SetCurrentFill(float value)
     {
-        if(value < min || value > max) { return; }
+        if(value > min && value < max) {
+            current = value;
+            float currentOffset = current - min;
+            float maxOffset = max - min;
+            float fillAmount = currentOffset / maxOffset;
+            mask.fillAmount = fillAmount;
+            fill.color = color;
+        }
 
-        current = value;
-        float currentOffset = current - min;
-        float maxOffset = max - min;
-        float fillAmount = currentOffset / maxOffset;
-        mask.fillAmount = fillAmount;
-        fill.color = color;
+
     }
 }

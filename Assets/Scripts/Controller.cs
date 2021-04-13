@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class Controller : MonoBehaviour
 {
+    public Flowchart flowchart;
     public ProgressBar progressBar;
     public float timeToFill;
 
@@ -13,6 +15,7 @@ public class Controller : MonoBehaviour
 
     private float min = 0.0f;
     private float current = 0.0f;
+
 
     private void Start()
     {
@@ -24,6 +27,8 @@ public class Controller : MonoBehaviour
     private void Update()
     {
         progressBar.max = timeToFill;
+        flowchart.SetFloatVariable("Fill", current);
+        Debug.Log("Flowchart fill float = " + flowchart.GetFloatVariable("Fill"));
     }
     
     public void ChangeSprite(ControllerPosition position, ControllerType type)
@@ -49,19 +54,20 @@ public class Controller : MonoBehaviour
     }
     public void FillUpSelection()
     {
-        if(current > timeToFill) { return; }
-
-
-        current += Time.deltaTime;
-        progressBar.SetCurrentFill(current);
+        if(current <= timeToFill)
+        {
+            current += Time.deltaTime;
+            progressBar.SetCurrentFill(current);
+        }
     }
 
     public void FillDownSelection()
     {
-        if (current < min) { return; }
-
-        current -= Time.deltaTime;
-        progressBar.SetCurrentFill(current);
+        if (current >= min)
+        {
+            current -= Time.deltaTime;
+            progressBar.SetCurrentFill(current);
+        }
     }
 }
 
