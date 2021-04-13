@@ -11,7 +11,7 @@ public class AffectionBar : MonoBehaviour
 
     public void SetAffection()
     {
-        float value = flowchart.GetFloatVariable("Affection");
+        float value = progressBar.current + flowchart.GetFloatVariable("Affection");
         StartCoroutine(FillAnimation(value));
         Debug.Log("Affection Call Function");
     }
