@@ -94,7 +94,7 @@ MonoBehaviour:
   current: 3.8
   mask: {fileID: 4315760767017309424}
   fill: {fileID: 4315760768044741903}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.7075472, g: 0.110137075, b: 0.110137075, a: 1}
 --- !u!1 &4315760767017309426
 GameObject:
   m_ObjectHideFlags: 0

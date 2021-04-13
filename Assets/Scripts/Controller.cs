@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
     public ProgressBar progressBar;
     public float timeToFill;
+
+    public Image image;
+    public InputType[] control = new InputType[4];
 
     private float min = 0.0f;
     private float current = 0.0f;
@@ -19,39 +23,31 @@ public class Controller : MonoBehaviour
     }
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        
-        //up
-        if (verticalInput == 1)
-        {
-            Debug.Log("Up");
-            FillUpSelection();
-        }//down
-        else if (verticalInput == -1)
-        {
-            Debug.Log("Down");
-            FillUpSelection();
-        }//right
-        else if (horizontalInput == 1)
-        {
-            Debug.Log("Right");
-            FillUpSelection();
-        }//left
-        else if (horizontalInput == -1)
-        {
-            Debug.Log("Left");
-            FillUpSelection();
-        }
-        else
-        {
-            FillDownSelection();
-        }
-
         progressBar.max = timeToFill;
     }
+    
+    public void ChangeSprite(ControllerPosition position, ControllerType type)
+    {
+        int index = 0;
+        foreach(InputType inputType in control)
+        {
+            if(inputType.controlType == type)
+            {
+                break;
+            }
 
-    private void FillUpSelection()
+            index++;
+        }
+
+        foreach (InputCommande inputCommande in control[index].commande)
+        {
+            if(inputCommande.position == position)
+            {
+                image.sprite = inputCommande.sprite;
+            }
+        }
+    }
+    public void FillUpSelection()
     {
         if(current > timeToFill) { return; }
 
@@ -60,11 +56,58 @@ public class Controller : MonoBehaviour
         progressBar.SetCurrentFill(current);
     }
 
-    private void FillDownSelection()
+    public void FillDownSelection()
     {
         if (current < min) { return; }
 
         current -= Time.deltaTime;
         progressBar.SetCurrentFill(current);
     }
+}
+
+[System.Serializable]
+public class InputType
+{
+    public string name;
+    public ControllerType controlType = ControllerType.Keyboard;
+    public InputCommande[] commande = new InputCommande[5];
+
+    public InputType()
+    {
+        commande[0] = new InputCommande("Default", ControllerPosition.Default);
+        commande[1] = new InputCommande("Up", ControllerPosition.Up);
+        commande[2] = new InputCommande("Down", ControllerPosition.Down);
+        commande[3] = new InputCommande("Left", ControllerPosition.Left);
+        commande[4] = new InputCommande("Right", ControllerPosition.Right);
+    }
+}
+
+[System.Serializable]
+public class InputCommande {
+
+    public string name;
+    public Sprite sprite;
+    public ControllerPosition position = ControllerPosition.Default;
+
+    public InputCommande(string _name, ControllerPosition _position)
+    {
+        this.name = _name;
+        this.position = _position;
+    }
+}
+
+public enum ControllerType{
+    Keyboard,
+    Mouse,
+    Joystick,
+    WineGlass
+}
+
+public enum ControllerPosition
+{
+    Up,
+    Down,
+    Left,
+    Right,
+    Default
 }
