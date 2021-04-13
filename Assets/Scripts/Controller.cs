@@ -28,7 +28,6 @@ public class Controller : MonoBehaviour
     {
         progressBar.max = timeToFill;
         flowchart.SetFloatVariable("Fill", current);
-        Debug.Log("Flowchart fill float = " + flowchart.GetFloatVariable("Fill"));
     }
     
     public void ChangeSprite(ControllerPosition position, ControllerType type)

@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401c528b81c71814e8f86c52b32d872d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowchart: {fileID: 0}
   progressBar: {fileID: 1677583166439100884}
   timeToFill: 0.5
   image: {fileID: 1677583165971227385}

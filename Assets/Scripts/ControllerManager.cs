@@ -15,28 +15,24 @@ public class ControllerManager : MonoBehaviour
         //up
         if (verticalInput > 0)
         {
-            Debug.Log("Up");
             controller.FillUpSelection();
             controller.ChangeSprite(ControllerPosition.Up, ControllerType.Keyboard);
             glass.MoveUp();
         }//down
         else if (verticalInput < 0)
         {
-            Debug.Log("Down");
             controller.FillUpSelection();
             controller.ChangeSprite(ControllerPosition.Down, ControllerType.Keyboard);
             glass.MoveDown();
         }//right
         else if (horizontalInput > 0)
         {
-            Debug.Log("Right");
             controller.FillUpSelection();
             controller.ChangeSprite(ControllerPosition.Right, ControllerType.Keyboard);
             glass.MoveRight();
         }//left
         else if (horizontalInput < 0)
         {
-            Debug.Log("Left");
             controller.FillUpSelection();
             controller.ChangeSprite(ControllerPosition.Left, ControllerType.Keyboard);
             glass.MoveLeft();

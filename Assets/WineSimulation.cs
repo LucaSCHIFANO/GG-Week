@@ -6,7 +6,6 @@ public class WineSimulation : MonoBehaviour
 {
     public GameObject wine;
     public float speed = 0.1f;
-    public float tolerance = 1.0f;
 
     private float widthLimit;
     private float heightLimit;

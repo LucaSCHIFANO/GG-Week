@@ -25,9 +25,13 @@ public class ProgressBar : MonoBehaviour
     public Image fill;
     public Color color;
 
+    private void Start()
+    {
+        current = min;
+    }
     public void SetCurrentFill(float value)
     {
-        if(value > min && value < max) {
+        if(value >= min && value <= max) {
             current = value;
             float currentOffset = current - min;
             float maxOffset = max - min;
