@@ -11,6 +11,12 @@ public class AffectionBar : MonoBehaviour
     public Sprite heart;
     public Sprite brokenHeart;
 
+    public Transform spawnParticule;
+    public Transform spawnParticule2;
+
+    public GameObject love;
+    public GameObject breaked;
+
     
     public void SetAffection()
     {
@@ -31,13 +37,14 @@ public class AffectionBar : MonoBehaviour
 
     public void PlayPositiveFeedback()
     {
-
+        Instantiate(love, spawnParticule.position, spawnParticule.rotation);
     }
 
     public void PlayNegativeFeedback()
     {
-
+        Instantiate(breaked, spawnParticule2.position, spawnParticule2.rotation);
     }
+
     IEnumerator FillAnimation(float newValue)
     {
         float timer = 0.0f;
