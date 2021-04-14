@@ -7,11 +7,18 @@ public class ControllerManager : MonoBehaviour
     public Controller controller;
     public WineSimulation glass;
 
+    private bool controllerIsActive = false;
+    private void Awake()
+    {
+        GameEvents.hasNotArduino.AddListener(ActivateController);
+    }
     private void Update()
     {
+        if (!controllerIsActive) { return; }
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
+        Debug.Log("controller is active");
         //up
         if (verticalInput > 0)
         {
@@ -43,5 +50,10 @@ public class ControllerManager : MonoBehaviour
             controller.ChangeSprite(ControllerPosition.Default, ControllerType.Keyboard);
             glass.ResetPosition();
         }
+    }
+
+    private void ActivateController()
+    {
+        controllerIsActive = true;
     }
 }

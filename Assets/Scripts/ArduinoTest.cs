@@ -7,24 +7,33 @@ using System.IO.Ports;
 /* Working Arduino Code */
 public class ArduinoTest : MonoBehaviour
 {
-    public bool hasSendMessage = false;
-
     public SerialPort stream;
     public string dataString = null;
     public float timerSet;
     private float timer;
+
+    private bool hasSendMessage = false;
+    public bool hasStreamOpen = false;
     private void Awake()
     {
         //initialize stream open
         stream = new SerialPort("COM5", 9600);
         stream.ReadTimeout = 50;
-        stream.Open();
-
-        timer = timerSet;
+        try
+        {
+            stream.Open();
+            hasStreamOpen = true;
+        }
+        catch
+        {
+            Debug.Log("Stream not found");
+            GameEvents.hasNotArduino.Invoke();
+        }
     }
 
     private void Update()
     {
+        if(!hasStreamOpen) { return; }
         //send message to arduino
         if (!hasSendMessage)
         {
@@ -55,12 +64,12 @@ public class ArduinoTest : MonoBehaviour
         try
         {
             dataString = stream.ReadLine();
-            Debug.Log(dataString);
+            //Debug.Log(dataString);
         }
         catch (TimeoutException e)
         {
             dataString = null;
-            Debug.Log("Timeout");
+            //Debug.Log("Timeout");
         }
     }
 }

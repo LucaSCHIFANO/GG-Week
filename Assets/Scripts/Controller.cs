@@ -14,7 +14,7 @@ public class Controller : MonoBehaviour
     public InputType[] control = new InputType[4];
 
     private float min = 0.0f;
-    private float current = 0.0f;
+    [SerializeField] private float current = 0.0f;
 
 
     private void Start()
@@ -27,7 +27,11 @@ public class Controller : MonoBehaviour
     private void Update()
     {
         progressBar.max = timeToFill;
-        flowchart.SetFloatVariable("Fill", current);
+        if(flowchart != null)
+        {
+            flowchart.SetFloatVariable("Fill", current);
+        }
+       
     }
     
     public void ChangeSprite(ControllerPosition position, ControllerType type)

@@ -30,9 +30,27 @@ public class WineSimulation : MonoBehaviour
                 wine.transform.position.y + speed, 
                 wine.transform.position.z);
         }
+        //else {
+        //    wine.transform.position = new Vector3(
+        //        transform.position.x,
+        //        transform.position.y + limit,
+        //        transform.position.z);
+        //}
 
     }
 
+    public void MoveUpInsta()
+    {
+        float limit = heightLimit - wineHeightLimit;
+        if (wine.transform.position.y < transform.position.y + limit)
+        {
+            wine.transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y + limit,
+                transform.position.z);
+            Debug.Log(wine.transform.position);
+        }
+    }
     public void MoveDown()
     {
         float limit = heightLimit - wineHeightLimit;
@@ -41,6 +59,24 @@ public class WineSimulation : MonoBehaviour
             wine.transform.position = new Vector3(
                 wine.transform.position.x, 
                 wine.transform.position.y - speed, 
+                wine.transform.position.z);
+        }
+        //else {
+        //    wine.transform.position = new Vector3(
+        //        transform.position.x,
+        //        transform.position.y - limit,
+        //        transform.position.z);
+        //}
+    }
+
+    public void MoveDownInsta()
+    {
+        float limit = heightLimit - wineHeightLimit;
+        if (wine.transform.position.y > transform.position.y - limit)
+        {
+            wine.transform.position = new Vector3(
+                wine.transform.position.x,
+                wine.transform.position.y - limit,
                 wine.transform.position.z);
         }
     }
@@ -55,6 +91,26 @@ public class WineSimulation : MonoBehaviour
                 wine.transform.position.y, 
                 wine.transform.position.z);
         }
+
+        //if (wine.transform.position.x > transform.position.x - limit)
+        //{
+        //    wine.transform.position = new Vector3(
+        //        transform.position.x - limit,
+        //        transform.position.y,
+        //        transform.position.z);
+        //}
+    }
+
+    public void MoveLeftInsta()
+    {
+        float limit = widthLimit - wineWidthLimit;
+        if (wine.transform.position.x > transform.position.x - limit)
+        {
+            wine.transform.position = new Vector3(
+                wine.transform.position.x - limit,
+                wine.transform.position.y,
+                wine.transform.position.z);
+        }
     }
 
     public void MoveRight()
@@ -65,6 +121,26 @@ public class WineSimulation : MonoBehaviour
             wine.transform.position = new Vector3(
             wine.transform.position.x + speed, 
             wine.transform.position.y, 
+            wine.transform.position.z);
+        }
+
+        //if (wine.transform.position.x > transform.position.x + limit)
+        //{
+        //    wine.transform.position = new Vector3(
+        //        transform.position.x + limit,
+        //        transform.position.y,
+        //        transform.position.z);
+        //}
+    }
+
+    public void MoveRightInsta()
+    {
+        float limit = widthLimit - wineWidthLimit;
+        if (wine.transform.position.x < transform.position.x + limit)
+        {
+            wine.transform.position = new Vector3(
+            wine.transform.position.x + limit,
+            wine.transform.position.y,
             wine.transform.position.z);
         }
     }
