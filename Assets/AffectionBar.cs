@@ -11,6 +11,7 @@ public class AffectionBar : MonoBehaviour
     public Sprite heart;
     public Sprite brokenHeart;
 
+    
     public void SetAffection()
     {
         float valueToAdd = flowchart.GetFloatVariable("Affection");
