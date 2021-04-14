@@ -51,5 +51,6 @@ public class AffectionBar : MonoBehaviour
         }
 
         progressBar.SetCurrentFill(newValue);
+        Debug.Log("debug" + progressBar.current + newValue);
     }
 }
