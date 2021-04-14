@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Audio;
+using Fungus;
 
 public class SoundManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public Flowchart flowchart;
 
     public static SoundManager instance;
     private void Awake()
@@ -67,6 +69,13 @@ public class SoundManager : MonoBehaviour
             return;
         }
         s.source.Play();
+    }
+
+
+    public void timeToPlay()
+    {
+        string name = flowchart.GetStringVariable("musicName");
+        FindObjectOfType<SoundManager>().PlaySound(name);
     }
 }
 
