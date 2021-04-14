@@ -26,8 +26,9 @@ public class ArduinoTest : MonoBehaviour
         }
         catch
         {
-            Debug.Log("Stream not found");
             GameEvents.hasNotArduino.Invoke();
+            hasStreamOpen = false;
+            Debug.Log("Stream not found");
         }
     }
 

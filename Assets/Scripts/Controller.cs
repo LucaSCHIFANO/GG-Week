@@ -29,7 +29,12 @@ public class Controller : MonoBehaviour
         progressBar.max = timeToFill;
         if(flowchart != null)
         {
+            if(current < 0) {
+                current = 0;
+            }
             flowchart.SetFloatVariable("Fill", current);
+            Debug.Log("Current = " + current);
+
         }
        
     }
@@ -61,6 +66,7 @@ public class Controller : MonoBehaviour
         {
             current += Time.deltaTime;
             progressBar.SetCurrentFill(current);
+            Debug.Log("Fill up to = " + current);
         }
     }
 

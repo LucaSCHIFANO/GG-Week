@@ -27,33 +27,38 @@ public class SerialController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!arduino.hasStreamOpen) { return; }
+        if(arduino.hasStreamOpen == false) { return; }
         GetPositionValue();
         if(position.x > maxX)
         {
             controller.FillUpSelection();
             glass.MoveUp();
+            controller.flowchart.SetStringVariable("Direction", "Up");
             Debug.Log("Forward");
         }else if(position.x < minX)
         {
             controller.FillUpSelection();
             glass.MoveDown();
+            controller.flowchart.SetStringVariable("Direction", "Down");
             Debug.Log("Back");
         }else if(position.y > maxY)
         {
             controller.FillUpSelection();
             glass.MoveLeft();
+            controller.flowchart.SetStringVariable("Direction", "Left");
             Debug.Log("Left");
         }else if(position.y < minY)
         {
             controller.FillUpSelection();
             glass.MoveRight();
+            controller.flowchart.SetStringVariable("Direction", "Right");
             Debug.Log("Right");
         }
         else
         {
             controller.FillDownSelection();
             glass.ResetPosition();
+            controller.flowchart.SetStringVariable("Direction", "None");
         }
         
     }
