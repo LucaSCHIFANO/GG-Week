@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Fungus;
 public class LevelManager : MonoBehaviour
 {
     private static LevelManager instance;
+
+    public Flowchart flowchart;
     private void Awake()
     {
         if(instance == null)
@@ -22,8 +25,9 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void NextSceneByName(string sceneName)
+    public void NextSceneByName()
     {
+        string sceneName = flowchart.GetStringVariable("SceneName");
         SceneManager.LoadScene(sceneName);
     }
     public void DefeatScreen()
