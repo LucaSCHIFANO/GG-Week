@@ -11,9 +11,12 @@ public class ArduinoTest : MonoBehaviour
     public string dataString = null;
     public float timerSet;
     private float timer;
+    public float bpm = 1;
 
     private bool hasSendMessage = false;
     public bool hasStreamOpen = false;
+
+    private bool isBeating = false;
     private void Awake()
     {
         //initialize stream open
@@ -68,6 +71,11 @@ public class ArduinoTest : MonoBehaviour
         }
         timer -= Time.deltaTime;
 
+        if (!isBeating)
+        {
+            StartCoroutine(Hearbeat());
+        }
+
     }
 
     public void WriteToArduino(string message)
@@ -88,5 +96,16 @@ public class ArduinoTest : MonoBehaviour
             dataString = null;
             //Debug.Log("Timeout");
         }
+    }
+
+    IEnumerator Hearbeat()
+    {
+        WriteToArduino("VibratorOn");
+        isBeating = true;
+        yield return new WaitForSeconds(0.2f);
+        WriteToArduino("VibratorOff");
+        Debug.Log("Vibrator Off");
+        yield return new WaitForSeconds(bpm);
+        isBeating = false;
     }
 }
