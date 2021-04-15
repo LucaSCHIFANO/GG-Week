@@ -13,9 +13,10 @@ public class SerialController : MonoBehaviour
     
     [Header("Debug")]
     public Vector2 position;
-    //public string vectString;
-    //public string accelX;
-    //public string accelY;
+    public string vectString;
+    public string accelX;
+    public string accelY;
+   
 
     private bool hasValue = false;
     ArduinoTest arduino;
@@ -71,7 +72,7 @@ public class SerialController : MonoBehaviour
             int i = 0;
             foreach (string value in values)
             {
-                if (value != "")
+                if (value != "" && value != null)
                 {
                     if (i == 0)
                     {
@@ -94,8 +95,8 @@ public class SerialController : MonoBehaviour
             //{
             //    accelX = tmp.Substring(0, separation);
             //    accelY = tmp2.Substring(separation + 1, tmp2.Length - separation - 1);
-            //    vect.x = int.Parse(accelX);
-            //    vect.y = int.Parse(accelY);
+            //    position.x = float.Parse(accelX);
+            //    position.y = float.Parse(accelY);
             //}
         }
     }
