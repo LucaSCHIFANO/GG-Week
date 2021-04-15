@@ -56,11 +56,11 @@ public class SerialController : MonoBehaviour
         //Debug.Log(flowValue);
         //if (flowchart.GetBooleanVariable("isWaitingForSelection"))
         //{
-            if (!hasReset)
-            {
-                controller.FillDownSelection();
-                hasReset = true;
-            }
+            //if (!hasReset)
+            //{
+            //    controller.FillDownSelection();
+            //    hasReset = true;
+            //}
 
             if (position.x > maxX)
             {
@@ -103,7 +103,6 @@ public class SerialController : MonoBehaviour
     public void ChangeHasReset()
     {
         hasReset = false;
-        Debug.Log("REsset ");
     }
     //DialogInput -> Fungus -> line 94 -> condition
     private void GetPositionValue()

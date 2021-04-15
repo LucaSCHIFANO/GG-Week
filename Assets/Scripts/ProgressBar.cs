@@ -42,7 +42,7 @@ public class ProgressBar : MonoBehaviour
 
         if(current >= max)
         {
-            GameEvents.isFilled.Invoke();
+            //GameEvents.isFilled.Invoke();
         }
     }
 }

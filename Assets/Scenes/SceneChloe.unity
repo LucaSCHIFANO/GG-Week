@@ -2055,6 +2055,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1152387010}
     - target: {fileID: 7744294175926939760, guid: a4df0ac73365ead48bd5837e6319538c, type: 3}
+      propertyPath: flowchart
+      value: 
+      objectReference: {fileID: 2077227233}
+    - target: {fileID: 7744294175926939760, guid: a4df0ac73365ead48bd5837e6319538c, type: 3}
       propertyPath: controller
       value: 
       objectReference: {fileID: 479499908}
