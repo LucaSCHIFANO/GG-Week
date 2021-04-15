@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Fungus;
 public class SerialController : MonoBehaviour
 {
     public Controller controller;
@@ -20,6 +20,20 @@ public class SerialController : MonoBehaviour
     private bool hasValue = false;
     ArduinoTest arduino;
 
+    KeyCode next = KeyCode.Return;
+    public static SerialController instance;
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
     private void Start()
     {
         arduino = GetComponent<ArduinoTest>();
@@ -63,6 +77,7 @@ public class SerialController : MonoBehaviour
         
     }
 
+    //DialogInput -> Fungus -> line 94 -> condition
     private void GetPositionValue()
     {
         if (arduino.dataString != null)
@@ -76,12 +91,14 @@ public class SerialController : MonoBehaviour
                     if (i == 0)
                     {
                         position.x = float.Parse(value);
+                        
                     }
                     else if (i == 1)
                     {
                         position.y = float.Parse(value);
                     }
 
+                    DialogInput.controllerPosition = position;
                     hasValue = true;
                 }
                 i++;

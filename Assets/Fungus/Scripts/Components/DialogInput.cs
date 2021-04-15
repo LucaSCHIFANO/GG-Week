@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 namespace Fungus
 {
+    
     /// <summary>
     /// Supported modes for clicking through a Say Dialog.
     /// </summary>
@@ -48,6 +49,8 @@ namespace Fungus
 
         protected Writer writer;
 
+        public static Vector2 controllerPosition;
+
         protected virtual void Awake()
         {
             writer = GetComponent<Writer>();
@@ -86,8 +89,10 @@ namespace Fungus
 
             if (writer != null && writer.IsWriting)
             {
-                if (Input.GetButtonDown(currentStandaloneInputModule.submitButton) ||
-                    (cancelEnabled && Input.GetButton(currentStandaloneInputModule.cancelButton)))
+                if ( Input.GetButtonDown(currentStandaloneInputModule.submitButton) ||
+                     (cancelEnabled && Input.GetButton(currentStandaloneInputModule.cancelButton)) ||
+                      (controllerPosition.x > 5)
+                   )
                 {
                     SetNextLineFlag();
                 }
