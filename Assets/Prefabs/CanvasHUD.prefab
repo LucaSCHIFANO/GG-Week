@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 6429254973214439628}
   glass: {fileID: 0}
+  arduino: {fileID: 0}
 --- !u!1001 &4047701124982324849
 PrefabInstance:
   m_ObjectHideFlags: 0
