@@ -1747,6 +1747,10 @@ PrefabInstance:
       propertyPath: flowchart
       value: 
       objectReference: {fileID: 2077227233}
+    - target: {fileID: 6429254973214439628, guid: c179444bba5611149a838f3ca6427cca, type: 3}
+      propertyPath: timeToFill
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6429254973771743487, guid: c179444bba5611149a838f3ca6427cca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2118,9 +2122,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1152387010}
     - target: {fileID: 7744294175926939760, guid: a4df0ac73365ead48bd5837e6319538c, type: 3}
+      propertyPath: flowchart
+      value: 
+      objectReference: {fileID: 2077227233}
+    - target: {fileID: 7744294175926939760, guid: a4df0ac73365ead48bd5837e6319538c, type: 3}
       propertyPath: controller
       value: 
       objectReference: {fileID: 479499908}
+    - target: {fileID: 7744294175926939760, guid: a4df0ac73365ead48bd5837e6319538c, type: 3}
+      propertyPath: delayBeforeNextDialogue
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7744294175926939763, guid: a4df0ac73365ead48bd5837e6319538c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2432,11 +2444,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 119.12807, y: 64.88192}
+  scrollPos: {x: 618.1809, y: 465.02362}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8200002
+  zoom: 0.64000034
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2521,7 +2533,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 110.9756
+    width: 107.81247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5674,6 +5686,8 @@ GameObject:
   - component: {fileID: 2077227288}
   - component: {fileID: 2077227683}
   - component: {fileID: 2077227271}
+  - component: {fileID: 2077227684}
+  - component: {fileID: 2077227685}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -5705,8 +5719,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 2077227236}
+  selectedCommands:
+  - {fileID: 2077227685}
   variables:
   - {fileID: 2077227275}
   - {fileID: 2077227282}
@@ -5719,6 +5735,7 @@ MonoBehaviour:
   - {fileID: 2077227585}
   - {fileID: 2077227680}
   - {fileID: 2077227683}
+  - {fileID: 2077227684}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -5812,7 +5829,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 308.02646
-    y: -107.850845
+    y: -105.653046
     width: 74.17582
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5829,6 +5846,7 @@ MonoBehaviour:
   - {fileID: 2077227261}
   - {fileID: 2077227273}
   - {fileID: 2077227353}
+  - {fileID: 2077227685}
   - {fileID: 2077227304}
   - {fileID: 2077227305}
   - {fileID: 2077227301}
@@ -7984,7 +8002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705fa1ac97df74e3a84ff952ffd923f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
+  scope: 1
   key: Dialogue
   value: 0
 --- !u!114 &2077227283
@@ -41119,6 +41137,173 @@ MonoBehaviour:
   scope: 1
   key: Direction
   value: 
+--- !u!114 &2077227684
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: isWaitingSelection
+  value: 0
+--- !u!114 &2077227685
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 533
+  indentLevel: 0
+  anyVar:
+    variable: {fileID: 2077227684}
+    data:
+      animatorData:
+        animatorRef: {fileID: 0}
+        animatorVal: {fileID: 0}
+      audioSourceData:
+        audioSourceRef: {fileID: 0}
+        audioSourceVal: {fileID: 0}
+      booleanData:
+        booleanRef: {fileID: 0}
+        booleanVal: 1
+      collectionData:
+        collectionRef: {fileID: 0}
+        collectionVal: {fileID: 0}
+      collider2DData:
+        collider2DRef: {fileID: 0}
+        collider2DVal: {fileID: 0}
+      colliderData:
+        colliderRef: {fileID: 0}
+        colliderVal: {fileID: 0}
+      colorData:
+        colorRef: {fileID: 0}
+        colorVal: {r: 0, g: 0, b: 0, a: 0}
+      floatData:
+        floatRef: {fileID: 0}
+        floatVal: 0
+      gameObjectData:
+        gameObjectRef: {fileID: 0}
+        gameObjectVal: {fileID: 0}
+      integerData:
+        integerRef: {fileID: 0}
+        integerVal: 0
+      materialData:
+        materialRef: {fileID: 0}
+        materialVal: {fileID: 0}
+      matrix4x4Data:
+        matrix4x4Ref: {fileID: 0}
+        matrix4x4Val:
+          e00: 0
+          e01: 0
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: 0
+          e12: 0
+          e13: 0
+          e20: 0
+          e21: 0
+          e22: 0
+          e23: 0
+          e30: 0
+          e31: 0
+          e32: 0
+          e33: 0
+      objectData:
+        objectRef: {fileID: 0}
+        objectVal: {fileID: 0}
+      quaternionData:
+        quaternionRef: {fileID: 0}
+        quaternionVal: {x: 0, y: 0, z: 0, w: 0}
+      rigidbody2DData:
+        rigidbody2DRef: {fileID: 0}
+        rigidbody2DVal: {fileID: 0}
+      rigidbodyData:
+        rigidbodyRef: {fileID: 0}
+        rigidbodyVal: {fileID: 0}
+      spriteData:
+        spriteRef: {fileID: 0}
+        spriteVal: {fileID: 0}
+      stringData:
+        stringRef: {fileID: 0}
+        stringVal: 
+      textureData:
+        textureRef: {fileID: 0}
+        textureVal: {fileID: 0}
+      transformData:
+        transformRef: {fileID: 0}
+        transformVal: {fileID: 0}
+      vector2Data:
+        vector2Ref: {fileID: 0}
+        vector2Val: {x: 0, y: 0}
+      vector3Data:
+        vector3Ref: {fileID: 0}
+        vector3Val: {x: 0, y: 0, z: 0}
+      vector4Data:
+        vector4Ref: {fileID: 0}
+        vector4Val: {x: 0, y: 0, z: 0, w: 0}
+  setOperator: 0
+  variable: {fileID: 0}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1 &2099391897
 GameObject:
   m_ObjectHideFlags: 0

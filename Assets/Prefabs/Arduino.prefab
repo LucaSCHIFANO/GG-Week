@@ -65,4 +65,5 @@ MonoBehaviour:
   maxX: 5
   minY: -5
   maxY: 5
+  delayBeforeNextDialogue: 2
   position: {x: 0, y: 0}

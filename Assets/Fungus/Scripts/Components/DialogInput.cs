@@ -1,12 +1,12 @@
 // This code is part of the Fungus library (https://github.com/snozbot/fungus)
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
-
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Fungus
 {
-    
     /// <summary>
     /// Supported modes for clicking through a Say Dialog.
     /// </summary>
@@ -74,7 +74,11 @@ namespace Fungus
                 }
             }
         }
-            
+         
+        public static void NoSkippingDialogue()
+        {
+            controllerPosition = new Vector2(0, 0);
+        }
         protected virtual void Update()
         {
             if (EventSystem.current == null)
@@ -91,7 +95,7 @@ namespace Fungus
             {
                 if ( Input.GetButtonDown(currentStandaloneInputModule.submitButton) ||
                      (cancelEnabled && Input.GetButton(currentStandaloneInputModule.cancelButton)) ||
-                      (controllerPosition.x > 5)
+                      (controllerPosition.x >= 2.0f)
                    )
                 {
                     SetNextLineFlag();

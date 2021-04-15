@@ -40,6 +40,9 @@ public class ProgressBar : MonoBehaviour
             fill.color = color;
         }
 
-
+        if(current >= max)
+        {
+            GameEvents.isFilled.Invoke();
+        }
     }
 }

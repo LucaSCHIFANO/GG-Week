@@ -32,9 +32,7 @@ public class Controller : MonoBehaviour
             if(current < 0) {
                 current = 0;
             }
-            flowchart.SetFloatVariable("Fill", current);
-            Debug.Log("Current = " + current);
-
+            
         }
        
     }
@@ -62,21 +60,25 @@ public class Controller : MonoBehaviour
     }
     public void FillUpSelection()
     {
-        if(current <= timeToFill)
+        if (current <= timeToFill)
         {
             current += Time.deltaTime;
             progressBar.SetCurrentFill(current);
-            Debug.Log("Fill up to = " + current);
+            flowchart.SetFloatVariable("Fill", current);
+            //Debug.Log("Fill up to = " + current);
         }
     }
 
     public void FillDownSelection()
     {
-        if (current >= min)
-        {
-            current -= Time.deltaTime;
-            progressBar.SetCurrentFill(current);
-        }
+        //if (current >= min)
+        //{
+        //    current -= Time.deltaTime;
+        //    progressBar.SetCurrentFill(current);
+        //}
+        current = 0;
+        progressBar.SetCurrentFill(current);
+        flowchart.SetFloatVariable("Fill", current);
     }
 }
 
