@@ -15,8 +15,8 @@ public class SoundManager : MonoBehaviour
     {
         if (instance == null)
         {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            /*instance = this;
+            DontDestroyOnLoad(this.gameObject);*/
             foreach (Sound s in sounds)
             {
                 s.source = gameObject.AddComponent<AudioSource>();
