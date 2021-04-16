@@ -103,7 +103,14 @@ public class ArduinoTest : MonoBehaviour
         WriteToArduino("VibratorOn");
         isBeating = true;
         yield return new WaitForSeconds(0.2f);
-        WriteToArduino("VibratorOff");
+        
+        float timeBeat = 0.5f;
+        while (timeBeat > 0)
+        {
+            WriteToArduino("VibratorOff");
+            timeBeat -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
         Debug.Log("Vibrator Off");
         yield return new WaitForSeconds(bpm);
         isBeating = false;
