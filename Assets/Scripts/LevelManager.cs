@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 using Fungus;
 public class LevelManager : MonoBehaviour
 {
-    private static LevelManager instance;
+    //private static LevelManager instance;
 
     public Flowchart flowchart;
-    private void Awake()
+    /*private void Awake()
     {
         if(instance == null)
         {
@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    }
+    }*/
     public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

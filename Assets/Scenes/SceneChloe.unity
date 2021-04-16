@@ -4141,7 +4141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5776667994460566023, guid: aa09e0113dfd87042acfc323d110d894, type: 3}
       propertyPath: sounds.Array.data[0].volume
-      value: 0.5
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 5776667994460566023, guid: aa09e0113dfd87042acfc323d110d894, type: 3}
       propertyPath: sounds.Array.data[10].pitch
@@ -5826,7 +5826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 396.392, y: -20.59352}
+  scrollPos: {x: 463.69962, y: -24.439669}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 553
@@ -33065,13 +33065,13 @@ MonoBehaviour:
   - {fileID: 2077227641}
   - {fileID: 2077227626}
   - {fileID: 2077227642}
-  - {fileID: 2077227766}
+  - {fileID: 2077227582}
   - {fileID: 2077227625}
   - {fileID: 2077227463}
   - {fileID: 2077227763}
   - {fileID: 2077227634}
   - {fileID: 2077227764}
-  - {fileID: 2077227582}
+  - {fileID: 2077227766}
   - {fileID: 2077227466}
   - {fileID: 2077227674}
   - {fileID: 2077227452}

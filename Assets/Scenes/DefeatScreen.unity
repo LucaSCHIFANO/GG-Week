@@ -857,6 +857,7 @@ GameObject:
   - component: {fileID: 1740514865}
   - component: {fileID: 1740514870}
   - component: {fileID: 1740514869}
+  - component: {fileID: 1740514871}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -920,7 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 65, y: 17}
+  scrollPos: {x: 78, y: 17}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -931,11 +932,11 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1740514866}
+  selectedBlocks: []
   selectedCommands:
   - {fileID: 1740514869}
-  variables: []
+  variables:
+  - {fileID: 1740514871}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -995,3 +996,18 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 3
   durationOLD: 0
+--- !u!114 &1740514871
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740514864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: SceneName
+  value: Menu
