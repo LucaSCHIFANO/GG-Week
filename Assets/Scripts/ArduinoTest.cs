@@ -19,21 +19,29 @@ public class ArduinoTest : MonoBehaviour
     private bool isBeating = false;
     private void Awake()
     {
+        int i = 0;
         //initialize stream open
-        stream = new SerialPort("COM5", 9600);
-        stream.ReadTimeout = 50;
-        try
+        while (!hasStreamOpen)
         {
-            stream.Open();
-            hasStreamOpen = true;
-        }
-        catch
-        {
-            GameEvents.hasNotArduino.Invoke();
-            hasStreamOpen = false;
-            Debug.Log("Stream not found");
 
+            
+            stream = new SerialPort(GetStreamPort(i), 9600);
+            stream.ReadTimeout = 50;
+            try
+            {
+                stream.Open();
+                hasStreamOpen = true;
+            }
+            catch
+            {
+                GameEvents.hasNotArduino.Invoke();
+                hasStreamOpen = false;
+                i++;
+                Debug.Log("Stream not found");
+
+            }
         }
+
         //initialize stream open
         //stream = new SerialPort("COM3", 9600);
         //stream.ReadTimeout = 50;
@@ -50,7 +58,12 @@ public class ArduinoTest : MonoBehaviour
         //}
 
     }
+    private string GetStreamPort(int i)
+    {
+        string portname = "COM" + i.ToString();
 
+        return portname;
+    }
     private void Update()
     {
         if(!hasStreamOpen) { return; }
