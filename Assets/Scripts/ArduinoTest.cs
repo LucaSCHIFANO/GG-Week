@@ -71,9 +71,11 @@ public class ArduinoTest : MonoBehaviour
         }
         timer -= Time.deltaTime;
 
+        Debug.Log(isBeating + "Before");
         if (!isBeating)
         {
             StartCoroutine(Hearbeat());
+            Debug.Log(isBeating + "After");
         }
 
     }
@@ -100,19 +102,26 @@ public class ArduinoTest : MonoBehaviour
 
     IEnumerator Hearbeat()
     {
-        WriteToArduino("VibratorOn");
         isBeating = true;
-        yield return new WaitForSeconds(0.2f);
-        
-        float timeBeat = 0.5f;
-        while (timeBeat > 0)
+        float timeOn = 1f;
+        while(timeOn > 0)
         {
-            WriteToArduino("VibratorOff");
-            timeBeat -= Time.deltaTime;
+            WriteToArduino("VibratorOn");
+            timeOn -= Time.deltaTime;
+            Debug.Log("VibratorOn");
             yield return new WaitForEndOfFrame();
         }
-        Debug.Log("Vibrator Off");
-        yield return new WaitForSeconds(bpm);
+        //yield return new WaitForSeconds(0.2f);
+        float timeOff = 1f;
+        while (timeOff > 0)
+        {
+            WriteToArduino("VibratorOff");
+            timeOff -= Time.deltaTime;
+            Debug.Log("Vibrator Off");
+            yield return new WaitForEndOfFrame();
+        }
+
+        //yield return new WaitForSeconds(bpm);
         isBeating = false;
     }
 }

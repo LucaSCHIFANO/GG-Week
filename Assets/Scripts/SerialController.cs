@@ -62,34 +62,34 @@ public class SerialController : MonoBehaviour
             //    hasReset = true;
             //}
 
-            if (position.x > maxX)
-            {
-                controller.FillUpSelection();
-                glass.MoveUp();
-                controller.flowchart.SetStringVariable("Direction", "Up");
-                Debug.Log("Forward");
-            }
-            else if (position.x < minX)
-            {
-                controller.FillUpSelection();
-                glass.MoveDown();
-                controller.flowchart.SetStringVariable("Direction", "Down");
-                Debug.Log("Back");
-            }
-            else if (position.y > maxY)
-            {
-                controller.FillUpSelection();
-                glass.MoveLeft();
-                controller.flowchart.SetStringVariable("Direction", "Left");
-                Debug.Log("Left");
-            }
-            else if (position.y < minY)
-            {
-                controller.FillUpSelection();
-                glass.MoveRight();
-                controller.flowchart.SetStringVariable("Direction", "Right");
-                Debug.Log("Right");
-            }
+        if (position.x > maxX)
+        {
+            controller.FillUpSelection();
+            glass.MoveUp();
+            controller.flowchart.SetStringVariable("Direction", "Up");
+            Debug.Log("Forward");
+        }
+        else if (position.x < minX)
+        {
+            controller.FillUpSelection();
+            glass.MoveDown();
+            controller.flowchart.SetStringVariable("Direction", "Down");
+            Debug.Log("Back");
+        }
+        else if (position.y > maxY)
+        {
+            controller.FillUpSelection();
+            glass.MoveLeft();
+            controller.flowchart.SetStringVariable("Direction", "Left");
+            Debug.Log("Left");
+        }
+        else if (position.y < minY)
+        {
+            controller.FillUpSelection();
+            glass.MoveRight();
+            controller.flowchart.SetStringVariable("Direction", "Right");
+            Debug.Log("Right");
+        }
         //}
         else
         {
