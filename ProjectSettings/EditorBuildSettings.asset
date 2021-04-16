@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DefeatScreen.unity
     guid: 7fbc2e5f06a2b414387c7b1ab811c27a
+  - enabled: 1
+    path: Assets/Scenes/SceneChloe.unity
+    guid: f3c0ce48ded13464285e925da1698b5c
+  - enabled: 1
+    path: Assets/Scenes/SceneJosi.unity
+    guid: 1ca6400d20b28924e8686f0a06203550
   m_configObjects: {}
