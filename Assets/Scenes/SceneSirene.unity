@@ -3068,7 +3068,7 @@ GameObject:
   - component: {fileID: 1221279670}
   - component: {fileID: 1221279669}
   m_Layer: 0
-  m_Name: Chloe
+  m_Name: Sirene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3086,15 +3086,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Chloe
-  nameColor: {r: 0.8588236, g: 0.6901961, b: 0.4039216, a: 1}
+  nameText: Sirene
+  nameColor: {r: 0, g: 0.90717316, b: 0.9716981, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
-  - {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
-  - {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
-  - {fileID: 21300000, guid: 93c057f92b2a8964da48afc3324b29d3, type: 3}
-  - {fileID: 21300000, guid: 09ba5193f1608714dbebe8fa9c9ce7a1, type: 3}
+  - {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
+  - {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
+  - {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -5551,7 +5549,6 @@ GameObject:
   - component: {fileID: 2077227660}
   - component: {fileID: 2077227659}
   - component: {fileID: 2077227600}
-  - component: {fileID: 2077227648}
   - component: {fileID: 2077227647}
   - component: {fileID: 2077227606}
   - component: {fileID: 2077227605}
@@ -5669,7 +5666,6 @@ GameObject:
   - component: {fileID: 2077227423}
   - component: {fileID: 2077227409}
   - component: {fileID: 2077227417}
-  - component: {fileID: 2077227448}
   - component: {fileID: 2077227451}
   - component: {fileID: 2077227420}
   - component: {fileID: 2077227459}
@@ -5702,8 +5698,6 @@ GameObject:
   - component: {fileID: 2077227283}
   - component: {fileID: 2077227270}
   - component: {fileID: 2077227721}
-  - component: {fileID: 2077227741}
-  - component: {fileID: 2077227784}
   - component: {fileID: 2077227768}
   - component: {fileID: 2077227782}
   - component: {fileID: 2077227769}
@@ -5752,7 +5746,6 @@ GameObject:
   - component: {fileID: 2077227801}
   - component: {fileID: 2077227808}
   - component: {fileID: 2077227806}
-  - component: {fileID: 2077227814}
   - component: {fileID: 2077227818}
   - component: {fileID: 2077227819}
   - component: {fileID: 2077227820}
@@ -5852,6 +5845,17 @@ GameObject:
   - component: {fileID: 2077227902}
   - component: {fileID: 2077227911}
   - component: {fileID: 2077227912}
+  - component: {fileID: 2077227741}
+  - component: {fileID: 2077227648}
+  - component: {fileID: 2077227448}
+  - component: {fileID: 2077227784}
+  - component: {fileID: 2077227814}
+  - component: {fileID: 2077227913}
+  - component: {fileID: 2077227914}
+  - component: {fileID: 2077227917}
+  - component: {fileID: 2077227916}
+  - component: {fileID: 2077227915}
+  - component: {fileID: 2077227918}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -5872,19 +5876,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 741.7873, y: -587.5916}
+  scrollPos: {x: -184.50826, y: -632.73804}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 483
-  zoom: 0.45999992
+  zoom: 0.7299997
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 2077227575}
+  selectedCommands:
+  - {fileID: 2077227633}
   variables:
   - {fileID: 2077227275}
   - {fileID: 2077227282}
@@ -5951,7 +5957,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -589.91675
     y: 25.486301
-    width: 100.00001
+    width: 100.68495
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5990,9 +5996,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 27.150206
+    x: 31.498032
     y: -111.75802
-    width: 76.08696
+    width: 74.65755
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6245,7 +6251,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -660.64984
     y: 163.78421
-    width: 73.91305
+    width: 76.027405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6298,7 +6304,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -485.56784
     y: 163.78421
-    width: 65.21739
+    width: 65.0685
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6374,7 +6380,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -569.6106
     y: 302.08206
-    width: 65.21739
+    width: 66.43836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6550,7 +6556,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -281.10266
     y: -200.35434
-    width: 82.6087
+    width: 84.24659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6578,7 +6584,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -611.853
     y: -114.24096
-    width: 139.13045
+    width: 141.78085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6610,7 +6616,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -6636,7 +6642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: Salut, salut !! Je suis Josianne DUPAHTE, tu es la pour le rendez vous?
+  storyText: "Coucou mon petit poisson rouge, alors c\u2019est toi mon date ?"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -6721,8 +6727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 531
   indentLevel: 1
-  storyText: "Des chats! Une demi-douzaine de chats! J\u2019adore mes chats ! Je
-    les aime plus que tout \r\xEAtre dans ce monde!!\n"
+  storyText: "Beurk ce n\u2019est pas pour moi en plus je risque de me casser un
+    ongle"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -6749,7 +6755,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 534
   indentLevel: 1
-  text: "J\u2019adorerais les rencontrer ces petits chats."
+  text: "Ah je comprends quelle horreur, mieux vaut acheter des trucs tout fait,
+    quand on a de l\u2019argent autant en profiter."
   description: 
   targetBlock: {fileID: 2077227769}
   hideIfVisited: 0
@@ -6774,9 +6781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 646.26184
+    x: 648.4357
     y: -110.33212
-    width: 84.782616
+    width: 84.24659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6786,8 +6793,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2077227766}
-  - {fileID: 2077227448}
-  - {fileID: 2077227741}
   - {fileID: 2077227315}
   suppressAllAutoSelections: 0
 --- !u!114 &2077227268
@@ -6804,9 +6809,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -14.919111
+    x: -17.093025
     y: 208.90576
-    width: 80.434784
+    width: 80.13699
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6845,7 +6850,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -6901,7 +6906,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 533
   indentLevel: 1
-  text: "Avec eux, tu n'es pas pr\xE8s de t\u2019ennuyer."
+  text: "\xC7a ne m\u2019\xE9tonne pas, moi j\u2019adore \xE7a je n\u2019ai pas peur
+    de m\u2019abimer"
   description: 
   targetBlock: {fileID: 2077227274}
   hideIfVisited: 0
@@ -6926,7 +6932,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: Je t'en pris!! Assied-toi
+  storyText: "Ok ok on va voir ce que tu vaux mon chou. Pose-moi des questions, je
+    t'\xE9coute"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -6955,7 +6962,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -23.508848
     y: 129.62527
-    width: 80.434784
+    width: 78.767136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8394,7 +8401,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -8902,7 +8909,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 2
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -10006,7 +10013,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -10188,7 +10195,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -10287,7 +10294,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1064.0049
     y: 705.6437
-    width: 65.21739
+    width: 65.0685
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10330,7 +10337,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 607.3698
     y: 779.14716
-    width: 121.73914
+    width: 119.86304
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10643,7 +10650,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.66165
     y: 683.7621
-    width: 65.21739
+    width: 63.698635
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10972,7 +10979,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -11002,7 +11009,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -11195,7 +11202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 130
   indentLevel: 0
-  text: "Des tas et des tas de chats \xE0 ne plus savoir quoi en faire!"
+  text: "J\u2019en mange mais je ne mange pas n\u2019importe quoi, encore moins de
+    sir\xE8ne "
   description: 
   targetBlock: {fileID: 2077227326}
   hideIfVisited: 0
@@ -11220,9 +11228,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 216.9499
+    x: 221.0595
     y: 811.7735
-    width: 110.869576
+    width: 113.01372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11255,7 +11263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 129
   indentLevel: 0
-  text: "Et les lapins \xE7a ne t'int\xE9resse pas?"
+  text: "Oh oui ! Rien ne vaut du saumon fum\xE9 comme entr\xE9e"
   description: 
   targetBlock: {fileID: 2077227323}
   hideIfVisited: 0
@@ -11282,7 +11290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 126.51623
     y: 880.07794
-    width: 117.39132
+    width: 118.49318
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11315,7 +11323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 136
   indentLevel: 0
-  text: "Je pense qu' un chat c\u2019est d\xE9j\xE0 pas mal. "
+  text: "Je suis vegan je n\u2019en mange pas"
   description: 
   targetBlock: {fileID: 2077227321}
   hideIfVisited: 0
@@ -11340,7 +11348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 128
   indentLevel: 0
-  storyText: 'Si tu veux voir des chats, combien en voudrais-tu? '
+  storyText: Tu aimes le poisson ?
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -11369,7 +11377,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.764545
     y: 934.24835
-    width: 113.04349
+    width: 115.75345
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11385,6 +11393,7 @@ MonoBehaviour:
   - {fileID: 2077227332}
   - {fileID: 2077227345}
   - {fileID: 2077227331}
+  - {fileID: 2077227913}
   - {fileID: 2077227328}
   - {fileID: 2077227350}
   suppressAllAutoSelections: 0
@@ -11406,7 +11415,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 09ba5193f1608714dbebe8fa9c9ce7a1, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -11887,7 +11896,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -11913,8 +11922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 148
   indentLevel: 1
-  storyText: "Tu devrais quand m\xEAme faire attention, un chat \xE7a demande beaucoup
-    d\u2019attention."
+  storyText: "J'espere bien que tu ne mange pas de sir\xE8ne!!"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -11956,8 +11964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 146
   indentLevel: 1
-  storyText: "Il ne survivra pas longtemps chez moi par contre. Mais c\u2019est vrai
-    que c\u2019est mignon un petit lapin."
+  storyText: .........
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -11999,7 +12006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 144
   indentLevel: 1
-  storyText: Tu devrais essayer plus, c'est vraiment incroyable.
+  storyText: Et bien le probleme est vite regler comme ca !
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -12067,7 +12074,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 5
+        floatVal: -2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -12197,7 +12204,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -12605,7 +12612,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 632.3696
     y: 1087.137
-    width: 86.95653
+    width: 86.98631
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12634,7 +12641,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -13183,7 +13190,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -13270,7 +13277,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -13370,7 +13377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 228
   indentLevel: 0
-  text: "Les films de SF. \xC7a change de mon quotidien"
+  text: "Ah bah t\u2019inqui\xE8te pas je gagne beaucoup, \xE9norm\xE9ment m\xEAme"
   description: 
   targetBlock: {fileID: 2077227365}
   hideIfVisited: 0
@@ -13432,7 +13439,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -13458,9 +13465,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 888.20807
+    x: 885.4683
     y: 954.769
-    width: 156.52176
+    width: 160.95895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13943,7 +13950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 429
   indentLevel: 1
-  storyText: Et bien dit donc, c'etait vraiment sympa
+  storyText: "Wow, ce que je peux te dire c\u2019est que tu me plais bien!!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -14016,9 +14023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 259
   indentLevel: 1
-  storyText: "C\u2019est vrai que beaucoup de films historiques sont sympas malgr\xE9
-    le fait que ce ne soit pas le type de film le plus appr\xE9ci\xE9. Mais moi je
-    les aime beaucoup."
+  storyText: "C'est int\xE9ressant ca! Si cela te suffit c'est cool!"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -15001,7 +15006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 225
   indentLevel: 0
-  text: "Les films d\u2019action. Quelque chose qui bouge un peu."
+  text: Oui, plus ou moins
   description: 
   targetBlock: {fileID: 2077227431}
   hideIfVisited: 0
@@ -16469,7 +16474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1143.5685
     y: 1188.6995
-    width: 67.39131
+    width: 66.43836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17881,7 +17886,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 664.14
     y: 1624.199
-    width: 65.21739
+    width: 65.0685
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17922,7 +17927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 223
   indentLevel: 0
-  storyText: "C\u2019est quoi ton type de film pr\xE9f\xE9r\xE9?"
+  storyText: "Tu gagnes beaucoup d\u2019argent ? \rSimple question hein..."
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -17986,8 +17991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 252
   indentLevel: 1
-  storyText: "Alors pour \xEAtre honn\xEAte, je trouve beaucoup de ces films moyens\u2026
-    Certains sont assez dr\xF4les et je trouve que c\u2019est souvent quitte ou double."
+  storyText: C'est honnete et est.... hmmm.... cool! Je suppose.
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -18604,7 +18608,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1057.7798
     y: 1007.9154
-    width: 115.2174
+    width: 118.49318
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18641,7 +18645,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -18671,7 +18675,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -18701,7 +18705,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -18731,7 +18735,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -18761,7 +18765,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -18791,7 +18795,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -19477,7 +19481,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1203.3802
     y: 1033.0757
-    width: 115.2174
+    width: 118.49318
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19493,6 +19497,7 @@ MonoBehaviour:
   - {fileID: 2077227422}
   - {fileID: 2077227421}
   - {fileID: 2077227373}
+  - {fileID: 2077227914}
   - {fileID: 2077227419}
   suppressAllAutoSelections: 0
 --- !u!114 &2077227425
@@ -19546,8 +19551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 234
   indentLevel: 1
-  storyText: "Ce genre de film sont parfois tellement irr\xE9alistes que ca en devient
-    dr\xF4le.  C'est vraiment sympa \xE0 regarder."
+  storyText: "Tu ne ma pas l'air tr\xE8s convaincu."
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -20164,7 +20168,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 773.11536
     y: 904.5662
-    width: 117.39132
+    width: 119.86304
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20364,7 +20368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 265
   indentLevel: 0
-  text: "J\u2019ai l'habitude de commander ou de manger avec mes amis"
+  text: "Les magasins. Ya toujours des petits quelque chose \xE0 acheter "
   description: 
   targetBlock: {fileID: 2077227460}
   hideIfVisited: 0
@@ -20389,8 +20393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 264
   indentLevel: 0
-  text: "Malheureusement je ne suis pas tr\xE8s bon en cuisine. Je ne veux plus intoxiquer
-    personne"
+  text: Faire des balades, se promener au calme
   description: 
   targetBlock: {fileID: 2077227445}
   hideIfVisited: 0
@@ -20415,7 +20418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 263
   indentLevel: 0
-  text: "Le curry! Il se marie tr\xE8s bien avec un bon caf\xE9!!"
+  text: 'Le surf, tu connais le film breakpoint? '
   description: 
   targetBlock: {fileID: 2077227467}
   hideIfVisited: 0
@@ -20458,7 +20461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 261
   indentLevel: 0
-  storyText: "Qu\u2019est ce que tu cuisine le mieux?"
+  storyText: Qu'est-ce qui te passionne le plus?
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -21127,7 +21130,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1232.7709
     y: 1373.0568
-    width: 95.65218
+    width: 96.57536
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21143,6 +21146,7 @@ MonoBehaviour:
   - {fileID: 2077227443}
   - {fileID: 2077227442}
   - {fileID: 2077227912}
+  - {fileID: 2077227915}
   - {fileID: 2077227417}
   - {fileID: 2077227355}
   - {fileID: 2077227440}
@@ -21176,7 +21180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 688
   indentLevel: 1
-  storyText: "Oh tu sais ce n\u2019est pas si difficile de faire \xE0 manger...."
+  storyText: Arrete!! Tu aime bien ca?!
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -21201,12 +21205,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 702
-  indentLevel: 0
-  storyText: "J'esp\xE8re que tout va bien pour toi.\r\nJe suppose qu\u2019on a tous
-    les deux des questions en t\xEAte.\r\n"
+  itemId: 886
+  indentLevel: 1
+  storyText: Parce que j'adore aussi! Tu as de bons gouts tu sais.
   description: 
-  character: {fileID: 1221279669}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -22719,7 +22722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 704
   indentLevel: 1
-  storyText: A tres vite <3
+  storyText: Salut mon chou <3
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -22748,7 +22751,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1116.1511
     y: 1427.3922
-    width: 106.52174
+    width: 106.164406
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22764,6 +22767,7 @@ MonoBehaviour:
   - {fileID: 2077227458}
   - {fileID: 2077227457}
   - {fileID: 2077227447}
+  - {fileID: 2077227918}
   - {fileID: 2077227412}
   - {fileID: 2077227454}
   suppressAllAutoSelections: 0
@@ -22818,7 +22822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 709
   indentLevel: 1
-  storyText: Je pense qu'on arrive a la fin de se rendez-vous
+  storyText: 'Enfin fini. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -23028,7 +23032,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1346.569
     y: 1261.9879
-    width: 100.00001
+    width: 100.68495
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23044,6 +23048,8 @@ MonoBehaviour:
   - {fileID: 2077227465}
   - {fileID: 2077227464}
   - {fileID: 2077227468}
+  - {fileID: 2077227917}
+  - {fileID: 2077227916}
   - {fileID: 2077227414}
   - {fileID: 2077227462}
   suppressAllAutoSelections: 0
@@ -23061,9 +23067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 301
   indentLevel: 1
-  storyText: "Le peu de curry que j\u2019ai mang\xE9 \xE9tait assez \xE9pic\xE9.
-    Je n\u2019en garde pas forc\xE9ment un bon souvenir. Mais le tien est peut \xEAtre
-    moins fort que ceux la"
+  storyText: "Oui je connais tr\xE8s bien! "
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -23092,7 +23096,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.91513
     y: 1358.2764
-    width: 67.39131
+    width: 66.43836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25244,7 +25248,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -183.89015
     y: 1622.2236
-    width: 82.6087
+    width: 81.50686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25868,7 +25872,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 46.72194
     y: 1672.1686
-    width: 86.95653
+    width: 86.98631
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26465,7 +26469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -52.247475
     y: 1653.6569
-    width: 60.869568
+    width: 62.328773
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27088,7 +27092,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -303.29166
     y: 1591.2123
-    width: 76.08696
+    width: 76.027405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -28513,7 +28517,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 803.4065
     y: 1859.2568
-    width: 102.17392
+    width: 102.05481
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29286,7 +29290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 694.8612
     y: 1905.9487
-    width: 65.21739
+    width: 65.0685
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29907,7 +29911,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 544.1379
     y: 1903.6409
-    width: 71.739136
+    width: 73.28768
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30528,7 +30532,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 420.65146
     y: 1848.6587
-    width: 67.39131
+    width: 69.178085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -32855,7 +32859,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -2
+        floatVal: 2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -32983,7 +32987,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1297.7977
     y: 623.4057
-    width: 71.739136
+    width: 71.917816
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33072,7 +33076,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -33620,7 +33624,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 634.1668
     y: 190.6528
-    width: 104.34784
+    width: 104.79454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33916,8 +33920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 639
   indentLevel: 1
-  storyText: "Oh, a vrai dire je n\u2019y pas vraiment r\xE9fl\xE9chi. Je pr\xE9f\xE8re
-    ne pas me soucier de cela pour l'instant. Carpe diem comme on dit."
+  storyText: "Euh pourquoi tu ne l\u2019aimes pas ?"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -33946,7 +33949,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 923.30426
     y: 380.3581
-    width: 67.39131
+    width: 67.80823
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33996,7 +33999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 485
   indentLevel: 1
-  text: "O\xF9 est ce que tu te vois dans 5 \xE0 10 ans?"
+  text: "Tu as d\xE9j\xE0 pens\xE9 \xE0 changer de couleur de queue ? "
   description: 
   targetBlock: {fileID: 2077227590}
   hideIfVisited: 0
@@ -34021,7 +34024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 484
   indentLevel: 1
-  text: "O\xF9 est-ce que tu r\xEAves de partir en vacances?"
+  text: "Plut\xF4t eau douce ou eau sal\xE9e ?"
   description: 
   targetBlock: {fileID: 2077227594}
   hideIfVisited: 0
@@ -34048,7 +34051,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 388.02954
     y: 410.7342
-    width: 67.39131
+    width: 67.80823
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34062,7 +34065,6 @@ MonoBehaviour:
   - {fileID: 2077227706}
   - {fileID: 2077227705}
   - {fileID: 2077227666}
-  - {fileID: 2077227814}
   - {fileID: 2077227664}
   - {fileID: 2077227656}
   - {fileID: 2077227595}
@@ -34085,7 +34087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 631
   indentLevel: 1
-  text: "Tu sais, \xE7a fait du bien de sortir de sa zone de confort parfois. "
+  text: "Je comprends,  l\u2019oc\xE9an c\u2019est tellement plus cool"
   description: 
   targetBlock: {fileID: 2077227732}
   hideIfVisited: 0
@@ -34125,7 +34127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 632
   indentLevel: 1
-  text: "Parcourir le monde est assez excitant, tu devras essayer \xE0 l'occasion."
+  text: On trouve parfois de jolie perles dans certains lacs.
   description: 
   targetBlock: {fileID: 2077227720}
   hideIfVisited: 0
@@ -34150,7 +34152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 483
   indentLevel: 1
-  text: "As-tu un passe temps? Et si oui, qu\u2019est ce que c\u2019est?"
+  text: "Qu\u2019est-ce que t\u2019aimes faire ?"
   description: 
   targetBlock: {fileID: 2077227599}
   hideIfVisited: 0
@@ -34177,7 +34179,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 989.05676
     y: 152.20871
-    width: 65.21739
+    width: 66.43836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34191,7 +34193,6 @@ MonoBehaviour:
   - {fileID: 2077227659}
   - {fileID: 2077227600}
   - {fileID: 2077227796}
-  - {fileID: 2077227648}
   - {fileID: 2077227647}
   - {fileID: 2077227606}
   - {fileID: 2077227605}
@@ -34213,7 +34214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 573
   indentLevel: 1
-  storyText: "Alors oui, j\u2019ai un passe temps. "
+  storyText: "J\u2019aime me faire une journ\xE9e shopping, aller chez l\u2019esth\xE9ticienne
+    pour me faire des ongles toujours plus longs. "
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -34255,7 +34257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 578
   indentLevel: 1
-  text: "Ce n\u2019est pas une passion tr\xE8s commune."
+  text: On peut dire que tu aime prendre soin de toi
   description: 
   targetBlock: {fileID: 2077227679}
   hideIfVisited: 0
@@ -34280,7 +34282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 482
   indentLevel: 1
-  text: "Poss\xE8des-tu un animal de compagnie?"
+  text: Est-ce tu aimes les travaux manuels ?
   description: 
   targetBlock: {fileID: 2077227604}
   hideIfVisited: 0
@@ -34307,7 +34309,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 371.32773
     y: 137.6638
-    width: 65.21739
+    width: 65.0685
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34320,7 +34322,6 @@ MonoBehaviour:
   - {fileID: 2077227661}
   - {fileID: 2077227668}
   - {fileID: 2077227265}
-  - {fileID: 2077227784}
   - {fileID: 2077227588}
   - {fileID: 2077227284}
   - {fileID: 2077227272}
@@ -34343,7 +34344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 577
   indentLevel: 1
-  text: "Tu as le m\xE9rite d\u2019\xEAtre originale"
+  text: "Et tu fais \xE7a souvent? "
   description: 
   targetBlock: {fileID: 2077227681}
   hideIfVisited: 0
@@ -34524,7 +34525,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -34550,8 +34551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 644
   indentLevel: 1
-  text: "Cela me fait penser que je ne projette pas souvent\u2026 Ce devrait essayer
-    un jour."
+  text: "J\u2019aime bien le bleu personnellement."
   description: 
   targetBlock: {fileID: 2077227848}
   hideIfVisited: 0
@@ -35942,7 +35942,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 710
   indentLevel: 1
-  storyText: On pourra peut etre se recontacter?
+  storyText: "C'\xE9tait plut\xF4t bien nan? Il faudrait qu\u2019on se refasse \xE7a
+    un de ces quatres."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -36012,7 +36013,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -7
+        floatVal: 5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -36181,7 +36182,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 3
+        floatVal: -7
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -36350,7 +36351,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -2
+        floatVal: 2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -36594,7 +36595,7 @@ MonoBehaviour:
           colorVal: {r: 0, g: 0, b: 0, a: 0}
         floatData:
           floatRef: {fileID: 0}
-          floatVal: 50
+          floatVal: 5
         gameObjectData:
           gameObjectRef: {fileID: 0}
           gameObjectVal: {fileID: 0}
@@ -36808,7 +36809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 716
   indentLevel: 1
-  storyText: Je pense serieusement que tu n'est pas mon style.
+  storyText: "Bon je t\u2019avoue que ce n'\xE9tait pas comme je l\u2019avais esp\xE9r\xE9.
+    En tout cas je n\u2019ai pas aim\xE9."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -37047,7 +37049,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -5
+        floatVal: -2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -37216,7 +37218,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 3
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -37342,7 +37344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 715
   indentLevel: 1
-  storyText: Plutot sympa comme rendez-vous
+  storyText: "Qu\u2019est ce que tu en as pens\xE9? "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -37369,7 +37371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 714
   indentLevel: 1
-  storyText: Salut
+  storyText: A Plus
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -37439,7 +37441,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -5
+        floatVal: -7
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -37608,7 +37610,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 2
+        floatVal: -10
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -37750,11 +37752,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 574
+  itemId: 885
   indentLevel: 1
-  storyText: "\xC7a me permet de m\u2019occuper une bonne partie de l'apr\xE8s- midi."
+  storyText: "L'oc\xE9an, ca ne peux faire que du bien a ta peu mon chou"
   description: 
-  character: {fileID: 1221279669}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -37800,10 +37802,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 500
   indentLevel: 1
-  storyText: 'Je pense que je peux te poser 2 ou 3 questions a mon tour.
-
-    Ca
-    te vas?'
+  storyText: "Bon aller je vais te poser des questions \xE7a me soule de pas savoir
+    qui tu es, et penses pas que je suis acquise\u2026 "
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -38059,7 +38059,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1053.2633
     y: 483.68857
-    width: 82.6087
+    width: 82.876724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39177,8 +39177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 628
   indentLevel: 1
-  storyText: "Honn\xEAtement je suis tr\xE8s heureuse dans ma vie et pour rien au
-    monde je ne changerai quoi que ce soit. "
+  storyText: "C'\u2019est tellement spacieux t\u2019as beaucoup plus de villas sous
+    la mer que dans les petits lacs de paysans"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -39765,7 +39765,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -249.23341
     y: 89.89748
-    width: 78.26087
+    width: 77.39727
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39825,9 +39825,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1257.898
+    x: 1262.0076
     y: 196.78381
-    width: 80.434784
+    width: 81.50686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39879,7 +39879,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1344.6975
     y: 120.664246
-    width: 80.434784
+    width: 80.13699
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39918,7 +39918,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -40244,7 +40244,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -5
+        floatVal: -2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -40374,7 +40374,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -41144,7 +41144,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -41231,7 +41231,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 0
+        floatVal: 2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -41975,7 +41975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 627
   indentLevel: 1
-  storyText: Partir en vacances? Pourquoi faire?
+  storyText: "Eau sal\xE9e, j\u2019ai plus de potes dans ces eau la."
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -42782,7 +42782,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -42869,7 +42869,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 5
+        floatVal: 3
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -42999,7 +42999,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -43614,8 +43614,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 149.1989
-    y: 544.24445
-    width: 82.6087
+    y: 548.35406
+    width: 82.876724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -43843,7 +43843,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -44060,7 +44060,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -44674,9 +44674,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 56.825264
+    x: 58.19513
     y: 474.91354
-    width: 82.6087
+    width: 81.50686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44692,6 +44692,7 @@ MonoBehaviour:
   - {fileID: 2077227727}
   - {fileID: 2077227726}
   - {fileID: 2077227834}
+  - {fileID: 2077227741}
   - {fileID: 2077227725}
   - {fileID: 2077227724}
   - {fileID: 2077227723}
@@ -44715,7 +44716,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -44802,7 +44803,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 3
+        floatVal: 2
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -44932,7 +44933,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -45544,11 +45545,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 723
-  indentLevel: 0
-  storyText: "Je te propose de commencer, \xE7a te vas?\r"
+  itemId: 884
+  indentLevel: 1
+  storyText: On deviens un peu beaucoup d'ailleurs
   description: 
-  character: {fileID: 1221279669}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -45573,7 +45574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 643
   indentLevel: 1
-  text: "C\u2019est vrai, il faut penser \xE0 profiter \xE0 fond du moment pr\xE9sent."
+  text: Si si mais ca fait du bien de changer un peu
   description: 
   targetBlock: {fileID: 2077227743}
   hideIfVisited: 0
@@ -45600,7 +45601,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1141.0919
     y: 388.4103
-    width: 82.6087
+    width: 81.50686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -45616,6 +45617,7 @@ MonoBehaviour:
   - {fileID: 2077227749}
   - {fileID: 2077227748}
   - {fileID: 2077227864}
+  - {fileID: 2077227784}
   - {fileID: 2077227747}
   - {fileID: 2077227746}
   - {fileID: 2077227745}
@@ -45812,7 +45814,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -45899,7 +45901,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 0
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -46029,7 +46031,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -47234,9 +47236,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 119.86807
+    x: 117.69416
     y: 350.29
-    width: 82.6087
+    width: 81.50686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -47880,7 +47882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 713
   indentLevel: 1
-  storyText: A vrai dire je pense que tu me plait. On pourra se revoire
+  storyText: "On pourrait recommencer parce que \xE7a m'a plu. Et par \"ca\" je veux
+    dire toi."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -47911,7 +47914,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -47937,7 +47940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 717
   indentLevel: 1
-  storyText: "Passe une bonne soir\xE9e"
+  storyText: Enfin bref, salut....
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -47968,7 +47971,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -47998,7 +48001,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -48028,7 +48031,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -48054,7 +48057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 725
   indentLevel: 1
-  text: "J\u2019en ai eu des chats quand j\u2019\xE9tais petit."
+  text: "Autant demander \xE0 quelqu'un de le faire a sa place"
   description: 
   targetBlock: {fileID: 2077227757}
   hideIfVisited: 0
@@ -48081,7 +48084,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 16.732841
     y: 291.00955
-    width: 82.6087
+    width: 81.50686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -48293,7 +48296,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -48337,7 +48340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 751
   indentLevel: 1
-  storyText: Tu... tu es un rapide toi ...
+  storyText: C'est exactement ma philosophie. Deja, on pense a peu pret de la meme
+    facon toi et moi
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -48407,7 +48411,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -5
+        floatVal: 3
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -48537,7 +48541,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -49166,7 +49170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 726
   indentLevel: 1
-  text: "Je comprends, comment r\xE9sister \xE0 ces petites b\xEAtes"
+  text: "\xC7a ne fait pas de mal de temps en temps. C\u2019est m\xEAme assez amusant. "
   description: 
   targetBlock: {fileID: 2077227274}
   hideIfVisited: 0
@@ -49191,7 +49195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 749
   indentLevel: 1
-  storyText: "C\u2019est \xE0 peu pr\xE8s vrai, quand il ne dorment pas."
+  storyText: "Tu fais donc parti de cette cat\xE9gorie de personne..."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -49216,12 +49220,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 724
+  itemId: 887
   indentLevel: 1
-  storyText: "En fait, je suis tomb\xE9e amoureuse d\u2019eux d\xE8s ma naissance
-    donc maintenant \xE7a fait partie de ma vie.\r"
+  storyText: "Je dois bien r\xE9fl\xE9chir a tout plein de details avant de me lanc\xE9
+    la dedans"
   description: 
-  character: {fileID: 1221279669}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -49402,7 +49406,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -49446,7 +49450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 752
   indentLevel: 1
-  storyText: "Il faudrait que tu en reprennes, c\u2019est tellement mignon. "
+  storyText: "Oui, ce n'est pas une mauvaise id\xE9e... Parfois ca marche"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -49646,7 +49650,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -49854,7 +49858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 750
   indentLevel: 1
-  storyText: "C\u2019est simple, on ne peut pas leur r\xE9sister"
+  storyText: "Tu fais donc parti de cette cat\xE9gorie de personne..."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -49881,8 +49885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 753
   indentLevel: 1
-  storyText: "Ce n\u2019est pas forc\xE9ment la chose la plus int\xE9ressante mais
-    j\u2019adore le tricot."
+  storyText: "Oh une fois je ne t\u2019ai pas dit je me suis fais des ongles de la
+    m\xEAme couleur que ma queue, c\u2019\xE9tait trop un truc de ouf !"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -49909,7 +49913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 754
   indentLevel: 1
-  text: "Pour \xEAtre honn\xEAte avec toi, je ne connais pas grand-chose en tricot."
+  text: Tu prend beaucoup de temps pour te faire belle on dirait
   description: 
   targetBlock: {fileID: 2077227799}
   hideIfVisited: 0
@@ -49960,7 +49964,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 3
+        floatVal: 0
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -50088,7 +50092,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1178.0732
     y: 287.92258
-    width: 82.6087
+    width: 82.876724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -50145,7 +50149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 778
   indentLevel: 1
-  storyText: "Oui c\u2019est s\xFBr que tout le monde n\u2019a pas cette passion"
+  storyText: Oui, oui on me le dit souvent! C'est important en meme temps!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -50172,7 +50176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 777
   indentLevel: 1
-  storyText: "Oui c\u2019est s\xFBr que tout le monde n\u2019a pas cette passion"
+  storyText: "Assez souvent oui... Mais tu n'a pas l'air emball\xE9..."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -50355,7 +50359,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -50443,7 +50447,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 779
   indentLevel: 1
-  storyText: "Ce n\u2019est pas tr\xE8s compliqu\xE9. "
+  storyText: "Oui c'est un peu le d\xE9faut de tout cela, ca prend du temps. mais
+    je peux te dire que ca en vaux la peine"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -50474,7 +50479,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -51101,11 +51106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 784
+  itemId: 888
   indentLevel: 1
-  storyText: "Tu sais, j\u2019ai mes petites habitudes et je ne veux pas les perdre. "
+  storyText: "Ca pourrai faire un styl\xE9, en rouge peut etre....."
   description: 
-  character: {fileID: 1221279669}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -51553,7 +51558,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 364.94177
     y: 642.58795
-    width: 84.782616
+    width: 84.24659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -51565,10 +51570,11 @@ MonoBehaviour:
   - {fileID: 2077227815}
   - {fileID: 2077227843}
   - {fileID: 2077227842}
+  - {fileID: 2077227838}
   - {fileID: 2077227841}
   - {fileID: 2077227840}
   - {fileID: 2077227839}
-  - {fileID: 2077227838}
+  - {fileID: 2077227448}
   - {fileID: 2077227837}
   - {fileID: 2077227836}
   - {fileID: 2077227835}
@@ -51609,7 +51615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 785
   indentLevel: 1
-  text: "C\u2019est une fa\xE7on de voir les choses et elle est totalement l\xE9gitime."
+  text: "Je suis plut\xF4t mer, notamment la m\xE9diterran\xE9e. Pour le soleil"
   description: 
   targetBlock: {fileID: 2077227816}
   hideIfVisited: 0
@@ -51634,7 +51640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 786
   indentLevel: 1
-  text: "Oh oui\u2026 C\u2019est vrai que c\u2019est parfois dur de changer ses habitudes"
+  text: "Au moins dans les lacs il  n\u2019a pas de probl\xE8me avec le sel"
   description: 
   targetBlock: {fileID: 2077227820}
   hideIfVisited: 0
@@ -51659,9 +51665,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 256.20453
-    y: 598.71155
-    width: 84.782616
+    x: 247.98535
+    y: 597.3417
+    width: 84.24659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -51677,6 +51683,7 @@ MonoBehaviour:
   - {fileID: 2077227827}
   - {fileID: 2077227826}
   - {fileID: 2077227825}
+  - {fileID: 2077227648}
   - {fileID: 2077227824}
   - {fileID: 2077227823}
   - {fileID: 2077227822}
@@ -51873,7 +51880,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -51917,7 +51924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 811
   indentLevel: 1
-  storyText: "Je peux t\u2019assurer que c\u2019est encore plus dur pour moi."
+  storyText: Oh je vois que j'ai a faire a une petite nature...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -51987,7 +51994,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -2
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -52117,7 +52124,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13ce909986d01404bb710869cead0be4, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -52746,8 +52753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 810
   indentLevel: 1
-  storyText: "C\u2019est vrai que j'ai pas mal de choses sur internet qui ont l'air
-    assez jolies. "
+  storyText: Oh j'ai l'impression d'avoir a faire a un connaisseur!!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -52774,8 +52780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 809
   indentLevel: 1
-  storyText: "C\u2019est peut \xEAtre vrai, mais ce n\u2019est pas quelque chose
-    que je pourrais faire comme ca."
+  storyText: "Oui j'ai deja ammen\xE9 plein de personne dans les oc\xE9ans!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -52958,7 +52963,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -53002,7 +53007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 812
   indentLevel: 1
-  storyText: "Oui j\u2019aime bien mon petit chez moi"
+  storyText: "Oh je vois tr\xE8s bien...."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -53072,7 +53077,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 0
+        floatVal: 5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -53202,7 +53207,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -53410,7 +53415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 813
   indentLevel: 1
-  storyText: "Apr\xE8s faut-il encore savoir ou partir \xE0 un prix pas trop \xE9lev\xE9."
+  storyText: "Je devrai peut etre aller voir, mais je n'irai pas n'importe o\xF9"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -53437,8 +53442,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 814
   indentLevel: 1
-  text: "\xC7a m'arrive parfois de me projeter dans le futur, \xE7a me fait parfois
-    changer d\u2019avis sur les choses."
+  text: Ya pas mal de personne qui change de couleur de cheveux, ca donne un autre
+    style.
   description: 
   targetBlock: {fileID: 2077227850}
   hideIfVisited: 0
@@ -53463,7 +53468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 815
   indentLevel: 1
-  text: "Oui, vivre le moment pr\xE9sent est essentiel."
+  text: "Tu rigoles ? j\u2019adore \xE7a va trop bien avec ton teint !"
   description: 
   targetBlock: {fileID: 2077227657}
   hideIfVisited: 0
@@ -53490,7 +53495,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 865.15204
     y: 583.1601
-    width: 84.782616
+    width: 84.24659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53548,7 +53553,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 967.9058
     y: 532.65796
-    width: 84.782616
+    width: 84.24659
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53564,6 +53569,7 @@ MonoBehaviour:
   - {fileID: 2077227857}
   - {fileID: 2077227856}
   - {fileID: 2077227855}
+  - {fileID: 2077227814}
   - {fileID: 2077227854}
   - {fileID: 2077227853}
   - {fileID: 2077227852}
@@ -53760,7 +53766,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -53804,9 +53810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 840
   indentLevel: 1
-  storyText: "Oh, par exemple du prend du recule sur la situation ou tu pense peut
-    \xEAtre diff\xE9remment. Ce n\u2019est peut-\xEAtre pas une si mauvaise philosophie
-    apr\xE8s tout."
+  storyText: Maintenant que tu le dit....
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -53876,7 +53880,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 2
+        floatVal: 3
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -54006,7 +54010,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 09ba5193f1608714dbebe8fa9c9ce7a1, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -54635,7 +54639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 839
   indentLevel: 1
-  storyText: "Exactement! Juste profiter c\u2019est ce que je prefere."
+  storyText: Ouais c'est vrai, on me le dit tout le temps! Et ma queue, c'est du
+    naturelle dn plus!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -54662,7 +54667,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 838
   indentLevel: 1
-  storyText: "Tant que je ne me prends pas la t\xEAte, \xE7a me va."
+  storyText: "Le \" si si \" ne me plait pas trop. Je n'aime pas trop chang\xE9 d'un
+    coup mes habitudes."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -54889,8 +54895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 841
   indentLevel: 1
-  storyText: "Je ne pense pas \xEAtre la personne la plus qualifi\xE9e pour cela,
-    desol\xE9 \n"
+  storyText: Tout les poissons ne sont pas bleus mon chou....
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -54960,7 +54965,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -3
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -55740,8 +55745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 853
   indentLevel: 0
-  text: "Les films historiques. \xC7a me permet d\u2019en apprendre des choses en
-    m\xEAme temps."
+  text: Je gagne suffisamment.
   description: 
   targetBlock: {fileID: 2077227424}
   hideIfVisited: 0
@@ -55766,8 +55770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 854
   indentLevel: 0
-  text: "Les com\xE9dies. Pour pouvoir me d\xE9tendre un peu de toutes les choses
-    de la vie."
+  text: "e pr\xE9f\xE8re faire un m\xE9tier qui me plait et gagner moins, d'argent
+    c\u2019est tr\xE8s surfait"
   description: 
   targetBlock: {fileID: 2077227410}
   hideIfVisited: 0
@@ -55792,8 +55796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 842
   indentLevel: 0
-  text: "Peut-\xEAtre deux ou bien trois. Il faut qu\u2019ils puissent s\u2019amuser
-    ensemble."
+  text: "Je pr\xE9f\xE8re la viande. Les poissons c\u2019est pas mon truc"
   description: 
   targetBlock: {fileID: 2077227880}
   hideIfVisited: 0
@@ -55818,9 +55821,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -141.49374
-    y: 950.14813
-    width: 84.782616
+    x: -142.8636
+    y: 948.77826
+    width: 85.616455
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55878,7 +55881,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -55904,9 +55907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 850
   indentLevel: 1
-  storyText: "Je pense que c\u2019est un bon nombre pour commencer. Bon vu que je
-    suis habitu\xE9 j\u2019en ai maintenant 6 mais en m\xEAme temps quand on aime
-    on ne compte pas."
+  storyText: "Oh tr\xE8s bien, tu laisse mes copains tranquille ca me va! "
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -56143,7 +56144,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 7
+        floatVal: 5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -56273,7 +56274,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: 16165541496f7044d9c1f54d65368892, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -56740,7 +56741,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -56766,8 +56767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 862
   indentLevel: 1
-  storyText: "Ce genre de film me font me poser trop de questions. C\u2019est pour
-    \xE7a que j\u2019en regarde de moins en moins\u2026 voire m\xEAme presque plus"
+  storyText: Oula.... Tu n'en fait pas un peu trop mon chou?
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -57004,7 +57004,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: -7
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -57134,7 +57134,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 09ba5193f1608714dbebe8fa9c9ce7a1, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -57597,7 +57597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 865
   indentLevel: 0
-  text: "Je fais tr\xE8s bien la paella! Je crois que c\u2019est dans les g\xE8nes"
+  text: "La mer, c\u2019est splendide"
   description: 
   targetBlock: {fileID: 2077227901}
   hideIfVisited: 0
@@ -57624,7 +57624,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 933.4311
     y: 1449.5219
-    width: 145.65219
+    width: 147.26031
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -57682,7 +57682,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e4c972e95b27d3547ae6fbb14ae82334, type: 3}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -57708,8 +57708,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 873
   indentLevel: 1
-  storyText: "Oh voil\xE0 un plat que j\u2019adore!!! C\u2019est encore mieux quand
-    il fait bon dehors! "
+  storyText: "Oui regarder la mer toute la journ\xE9e c'est sympa, mais tu ne le
+    fait pas tout les jours si?"
   description: 
   character: {fileID: 1221279669}
   portrait: {fileID: 0}
@@ -57946,7 +57946,7 @@ MonoBehaviour:
         colorVal: {r: 0, g: 0, b: 0, a: 0}
       floatData:
         floatRef: {fileID: 0}
-        floatVal: 7
+        floatVal: -5
       gameObjectData:
         gameObjectRef: {fileID: 0}
         gameObjectVal: {fileID: 0}
@@ -58076,7 +58076,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1221279669}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d68d0f5060b843e4eadc8d7ea081275b, type: 3}
+  portrait: {fileID: 21300000, guid: cde551108bc1c1042a02850f30d8d36f, type: 3}
   offset: 1
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1569135316}
@@ -58539,11 +58539,175 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 876
   indentLevel: 1
-  storyText: "Intoxiqu\xE9 vraiment?! Hahahaha Il faudra que je v\xE9rifie \xE7a,
-    j\u2019ai bien mang\xE9 tout type de choses. On verra si c\u2019est si mauvais
-    que tu me dis. "
+  storyText: Pour etre honnete, les balades ce n'est pas se que je prefere.
   description: 
   character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2077227913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 889
+  indentLevel: 1
+  storyText: Mais tu mange quand meme des poissons hein....
+  description: 
+  character: {fileID: 1221279669}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2077227914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 890
+  indentLevel: 1
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1221279669}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 794aea50e67ee8d4a99723066df2d87c, type: 3}
+  offset: 1
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1569135316}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 1
+  waitUntilFinished: 0
+--- !u!114 &2077227915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 893
+  indentLevel: 1
+  storyText: J'aime bien sortir mais pas pour ca...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2077227916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 892
+  indentLevel: 1
+  storyText: Je devrais y faire un tour pendant mes prochaines vacances
+  description: 
+  character: {fileID: 1221279669}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2077227917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 891
+  indentLevel: 1
+  storyText: "J'ai meme une amie qui est allez a l'endroit ou le film a \xE9t\xE9
+    tourn\xE9."
+  description: 
+  character: {fileID: 1221279669}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2077227918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077227232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 894
+  indentLevel: 1
+  storyText: "Je pense qu'on a trouv\xE9 notre passe temps favori"
+  description: 
+  character: {fileID: 1221279669}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
