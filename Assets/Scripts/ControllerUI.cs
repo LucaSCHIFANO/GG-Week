@@ -4,19 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using Fungus;
 
-public class Controller : MonoBehaviour
+public class ControllerUI : MonoBehaviour
 {
-    public Flowchart flowchart;
-    public ProgressBar progressBar;
-    public float timeToFill;
+    public float timeToFill = 0.5f;
 
-    public Image image;
+
     public InputType[] control = new InputType[4];
 
+    public Flowchart flowchart;
+    ProgressBar progressBar;
+    Image controllerUI_Image;
+
     private float min = 0.0f;
-    [SerializeField] private float current = 0.0f;
+    private float current = 0.0f;
 
-
+    private void Awake()
+    {
+        controllerUI_Image = GameObject.Find("ControllerUI_Image").GetComponent<Image>();
+        progressBar = GameObject.Find("ProgressBar").GetComponent<ProgressBar>();
+        flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+    }
     private void Start()
     {
         progressBar.max = timeToFill;
@@ -27,24 +34,23 @@ public class Controller : MonoBehaviour
     private void Update()
     {
         progressBar.max = timeToFill;
-        if(flowchart != null)
+        if (flowchart != null)
         {
-            if(current < 0) {
+            if (current < 0)
+            {
                 current = 0;
             }
             flowchart.SetFloatVariable("Fill", current);
-            //Debug.Log("Current = " + current);
-
         }
-       
+
     }
-    
+
     public void ChangeSprite(ControllerPosition position, ControllerType type)
     {
         int index = 0;
-        foreach(InputType inputType in control)
+        foreach (InputType inputType in control)
         {
-            if(inputType.controlType == type)
+            if (inputType.controlType == type)
             {
                 break;
             }
@@ -54,15 +60,15 @@ public class Controller : MonoBehaviour
 
         foreach (InputCommande inputCommande in control[index].commande)
         {
-            if(inputCommande.position == position)
+            if (inputCommande.position == position)
             {
-                image.sprite = inputCommande.sprite;
+                controllerUI_Image.sprite = inputCommande.sprite;
             }
         }
     }
     public void FillUpSelection()
     {
-        if(current <= timeToFill)
+        if (current <= timeToFill)
         {
             current += Time.deltaTime;
             progressBar.SetCurrentFill(current);
@@ -77,6 +83,11 @@ public class Controller : MonoBehaviour
             current -= Time.deltaTime;
             progressBar.SetCurrentFill(current);
         }
+    }
+
+    public Flowchart GetFlowchart()
+    {
+        return this.flowchart;
     }
 }
 
@@ -98,7 +109,8 @@ public class InputType
 }
 
 [System.Serializable]
-public class InputCommande {
+public class InputCommande
+{
 
     public string name;
     public Sprite sprite;
@@ -111,7 +123,8 @@ public class InputCommande {
     }
 }
 
-public enum ControllerType{
+public enum ControllerType
+{
     Keyboard,
     Mouse,
     Joystick,
@@ -126,3 +139,5 @@ public enum ControllerPosition
     Right,
     Default
 }
+
+
