@@ -104,7 +104,7 @@ public class SerialController : MonoBehaviour
     {
         hasReset = false;
     }
-    //DialogInput -> Fungus -> line 94 -> condition
+    //Fungus -> DialogInput -> line 94 -> condition
     private void GetPositionValue()
     {
         if (arduino.dataString != null)

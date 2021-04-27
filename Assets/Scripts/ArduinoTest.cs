@@ -34,28 +34,15 @@ public class ArduinoTest : MonoBehaviour
             }
             catch
             {
-                GameEvents.hasNotArduino.Invoke();
                 hasStreamOpen = false;
-                Debug.Log("Stream not found");
-
             }
         }
 
-        //initialize stream open
-        //stream = new SerialPort("COM3", 9600);
-        //stream.ReadTimeout = 50;
-        //try
-        //{
-        //    stream.Open();
-        //    hasStreamOpen = true;
-        //}
-        //catch
-        //{
-        //    GameEvents.hasNotArduino.Invoke();
-        //    hasStreamOpen = false;
-        //    Debug.Log("Stream not found");
-        //}
-
+        if (!hasStreamOpen)
+        {
+            Debug.Log("Stream not found");
+            GameEvents.hasNotArduino.Invoke();
+        }
     }
     private string GetStreamPort(int i)
     {
