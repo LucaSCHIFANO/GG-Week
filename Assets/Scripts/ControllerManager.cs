@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class ControllerManager : MonoBehaviour
 {
-
-
-    private bool controllerIsActive = false;
-
     public float minX = -5.0f;
     public float maxX = 5.0f;
     public float minY = -5.0f;
@@ -19,27 +15,27 @@ public class ControllerManager : MonoBehaviour
     public string accelX;
     public string accelY;
 
-
-    private bool hasValue = false;
     private ControllerUI controllerUI;
     private WineSimulation glass;
     private ArduinoTest arduino;
-    public static ControllerManager instance;
+    //public static ControllerManager instance;
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
+        //if(instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(this.gameObject);
 
-            controllerUI = FindObjectOfType<ControllerUI>();
-            glass = FindObjectOfType<WineSimulation>();
-            arduino = FindObjectOfType<ArduinoTest>();
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+
+        //}
+        //else
+        //{
+        //    Destroy(this.gameObject);
+        //}
+
+        controllerUI = FindObjectOfType<ControllerUI>();
+        glass = FindObjectOfType<WineSimulation>();
+        arduino = FindObjectOfType<ArduinoTest>();
     }
     private void Update()
     {
@@ -107,8 +103,6 @@ public class ControllerManager : MonoBehaviour
                     {
                         position.y = float.Parse(value);
                     }
-
-                    hasValue = true;
                 }
                 i++;
             }

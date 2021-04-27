@@ -876,6 +876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca47b5ba70a685a499704bbd85a97f2c, type: 3}
+--- !u!1 &308499801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3375715213387125936, guid: ca47b5ba70a685a499704bbd85a97f2c, type: 3}
+  m_PrefabInstance: {fileID: 308499800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &390041343
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,11 +5582,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1696.9486, y: 190.31989}
+  scrollPos: {x: -450.2687, y: -718.2557}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 483
-  zoom: 0.3099999
+  zoom: 0.57999986
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5589,9 +5594,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2077227575}
+  - {fileID: 2077227467}
   selectedCommands:
-  - {fileID: 2077227369}
+  - {fileID: 2077227631}
   variables:
   - {fileID: 2077227275}
   - {fileID: 2077227282}
@@ -5658,7 +5663,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -589.91675
     y: 25.486301
-    width: 98.387115
+    width: 101.72415
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5699,7 +5704,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 31.498032
     y: -111.75802
-    width: 72.58065
+    width: 74.13794
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5952,7 +5957,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -660.64984
     y: 163.78421
-    width: 75.80646
+    width: 74.13794
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6005,7 +6010,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -485.56784
     y: 163.78421
-    width: 62.90323
+    width: 65.51724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6081,7 +6086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -569.6106
     y: 302.08206
-    width: 66.129036
+    width: 67.24138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6257,7 +6262,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -281.10266
     y: -200.35434
-    width: 82.25807
+    width: 82.75863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6285,7 +6290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -611.853
     y: -114.24096
-    width: 137.0968
+    width: 141.37933
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6484,7 +6489,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 648.4357
     y: -110.33212
-    width: 82.25807
+    width: 84.482765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6512,7 +6517,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.093025
     y: 208.90576
-    width: 79.032265
+    width: 79.31035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6663,7 +6668,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -23.508848
     y: 129.62527
-    width: 79.032265
+    width: 77.58621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8146,7 +8151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 545
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227289
@@ -9940,7 +9945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 565
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227306
@@ -9995,7 +10000,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1064.0049
     y: 705.6437
-    width: 62.90323
+    width: 65.51724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10038,7 +10043,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 607.3698
     y: 779.14716
-    width: 114.51614
+    width: 120.689674
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10351,7 +10356,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.66165
     y: 683.7621
-    width: 62.90323
+    width: 63.793106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10931,7 +10936,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 221.0595
     y: 811.7735
-    width: 108.06453
+    width: 113.79312
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10991,7 +10996,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 126.51623
     y: 880.07794
-    width: 117.74195
+    width: 118.96553
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11078,7 +11083,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.764545
     y: 934.24835
-    width: 111.290344
+    width: 113.79312
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12313,7 +12318,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 632.3696
     y: 1087.137
-    width: 82.25807
+    width: 86.20691
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13168,7 +13173,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 885.4683
     y: 954.769
-    width: 153.22583
+    width: 160.34485
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16175,7 +16180,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1143.5685
     y: 1188.6995
-    width: 62.90323
+    width: 67.24138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17587,7 +17592,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 664.14
     y: 1624.199
-    width: 62.90323
+    width: 65.51724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18309,7 +18314,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1057.7798
     y: 1007.9154
-    width: 114.51614
+    width: 115.51726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19182,7 +19187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1203.3802
     y: 1033.0757
-    width: 114.51614
+    width: 118.96553
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19869,7 +19874,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 773.11536
     y: 904.5662
-    width: 114.51614
+    width: 120.689674
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20831,7 +20836,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1232.7709
     y: 1373.0568
-    width: 91.9355
+    width: 96.551735
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22452,7 +22457,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1116.1511
     y: 1427.3922
-    width: 104.83873
+    width: 105.172424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22733,7 +22738,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1346.569
     y: 1261.9879
-    width: 98.387115
+    width: 101.72415
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22797,7 +22802,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.91513
     y: 1358.2764
-    width: 62.90323
+    width: 67.24138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24949,7 +24954,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -183.89015
     y: 1622.2236
-    width: 79.032265
+    width: 81.03449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25573,7 +25578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 46.72194
     y: 1672.1686
-    width: 85.48388
+    width: 87.931046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26170,7 +26175,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -52.247475
     y: 1653.6569
-    width: 62.90323
+    width: 63.793106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26791,9 +26796,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -303.29166
-    y: 1591.2123
-    width: 72.58065
+    x: -299.84335
+    y: 1589.4882
+    width: 75.862076
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -28216,9 +28221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 803.4065
-    y: 1859.2568
-    width: 98.387115
+    x: 805.1306
+    y: 1862.7051
+    width: 100.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -28991,7 +28996,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 694.8612
     y: 1905.9487
-    width: 62.90323
+    width: 65.51724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29612,7 +29617,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 544.1379
     y: 1903.6409
-    width: 72.58065
+    width: 72.4138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30233,7 +30238,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 420.65146
     y: 1848.6587
-    width: 69.35484
+    width: 68.96552
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -32517,7 +32522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 426
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227574
@@ -32688,7 +32693,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1297.7977
     y: 623.4057
-    width: 72.58065
+    width: 72.4138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33295,7 +33300,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 634.1668
     y: 190.6528
-    width: 104.83873
+    width: 103.44829
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33620,7 +33625,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 923.30426
     y: 380.3581
-    width: 66.129036
+    width: 67.24138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33722,7 +33727,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 388.02954
     y: 410.7342
-    width: 66.129036
+    width: 67.24138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33850,7 +33855,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 989.05676
     y: 152.20871
-    width: 66.129036
+    width: 65.51724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33980,7 +33985,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 371.32773
     y: 137.6638
-    width: 66.129036
+    width: 63.793106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34247,7 +34252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 481
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227610
@@ -34416,7 +34421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 479
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227612
@@ -34585,7 +34590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 477
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227614
@@ -34754,7 +34759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 475
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227616
@@ -34923,7 +34928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 473
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227618
@@ -35092,7 +35097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 471
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227620
@@ -35261,7 +35266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 469
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227622
@@ -35430,7 +35435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 467
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227624
@@ -35641,7 +35646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 463
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227628
@@ -35810,7 +35815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 461
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227630
@@ -35979,7 +35984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 459
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227632
@@ -36508,7 +36513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 455
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227636
@@ -36677,7 +36682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 453
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227638
@@ -36846,7 +36851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 451
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227640
@@ -37069,7 +37074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 447
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227644
@@ -37238,7 +37243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 445
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227646
@@ -37730,7 +37735,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1053.2633
     y: 483.68857
-    width: 79.032265
+    width: 82.75863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39436,7 +39441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -249.23341
     y: 89.89748
-    width: 75.80646
+    width: 79.31035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39498,7 +39503,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1262.0076
     y: 196.78381
-    width: 79.032265
+    width: 81.03449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39550,7 +39555,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1344.6975
     y: 120.664246
-    width: 79.032265
+    width: 79.31035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39872,7 +39877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 587
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227690
@@ -40859,7 +40864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 597
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227699
@@ -42497,7 +42502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 619
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227715
@@ -43286,7 +43291,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.1989
     y: 548.35406
-    width: 79.032265
+    width: 82.75863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -43558,7 +43563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 608
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227727
@@ -44347,7 +44352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 58.19513
     y: 474.91354
-    width: 79.032265
+    width: 81.03449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44431,7 +44436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 663
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227736
@@ -45272,7 +45277,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1135.9193
     y: 417.72083
-    width: 79.032265
+    width: 81.03449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -45529,7 +45534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 652
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227749
@@ -46909,7 +46914,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.69416
     y: 350.29
-    width: 79.032265
+    width: 81.03449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -47725,7 +47730,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 16.732841
     y: 291.00955
-    width: 79.032265
+    width: 81.03449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -48009,7 +48014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 733
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227776
@@ -49118,7 +49123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 744
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227790
@@ -49733,7 +49738,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1178.0732
     y: 287.92258
-    width: 79.032265
+    width: 82.75863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -50071,7 +50076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 772
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227808
@@ -51199,7 +51204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 364.94177
     y: 642.58795
-    width: 79.032265
+    width: 84.482765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -51308,7 +51313,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.98535
     y: 597.3417
-    width: 79.032265
+    width: 84.482765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -51592,7 +51597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 793
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227827
@@ -52675,7 +52680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 804
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227840
@@ -53136,7 +53141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 865.15204
     y: 583.1601
-    width: 79.032265
+    width: 84.482765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53194,7 +53199,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 971.13165
     y: 532.65796
-    width: 79.032265
+    width: 84.482765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53479,7 +53484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 822
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227857
@@ -54564,7 +54569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 833
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227870
@@ -55465,7 +55470,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -142.8636
     y: 948.77826
-    width: 82.25807
+    width: 84.482765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55743,7 +55748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 847
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227887
@@ -56603,7 +56608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 859
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227896
@@ -57266,7 +57271,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 933.4311
     y: 1449.5219
-    width: 143.54842
+    width: 144.8276
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -57545,7 +57550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 870
   indentLevel: 1
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 308499801}
   methodName: SetAffection
   delay: 0
 --- !u!114 &2077227908

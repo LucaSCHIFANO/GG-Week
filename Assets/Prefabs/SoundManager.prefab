@@ -128,76 +128,76 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
-  - name: Date1
+  - name: SceneChloeSave
     type: 0
-    clip: {fileID: 8300000, guid: bceae67228cccdc41bd046a073c8a264, type: 3}
+    clip: {fileID: 8300000, guid: 28269ce5ad0fa1144bf2e4b0bbdab18c, type: 3}
     volume: 1
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
     maxDist3D: 0
     mute: 0
-    loop: 0
-    playOnAwake: 0
+    loop: 1
+    playOnAwake: 1
     source: {fileID: 0}
-  - name: Date2
+  - name: SceneJosiSave
     type: 0
-    clip: {fileID: 8300000, guid: bab21071efade7f489ed46998257e309, type: 3}
+    clip: {fileID: 8300000, guid: 0cc35154f47e21b45be2b9195cdc3127, type: 3}
     volume: 1
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
     maxDist3D: 0
     mute: 0
-    loop: 0
-    playOnAwake: 0
+    loop: 1
+    playOnAwake: 1
     source: {fileID: 0}
-  - name: Date3
+  - name: SceneSireneSave
     type: 0
-    clip: {fileID: 8300000, guid: 526a79687854d11478522d2cb81a772f, type: 3}
+    clip: {fileID: 8300000, guid: 21c21aa62c943324fadc324f950c8449, type: 3}
     volume: 1
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
     maxDist3D: 0
     mute: 0
-    loop: 0
-    playOnAwake: 0
+    loop: 1
+    playOnAwake: 1
     source: {fileID: 0}
-  - name: Date3
-    type: 1
-    clip: {fileID: 8300000, guid: 526a79687854d11478522d2cb81a772f, type: 3}
-    volume: 1
-    pitch: 1
-    spatialBlend: 0
-    minDist3D: 0
-    maxDist3D: 0
-    mute: 0
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: Date3
+  - name: Menu
     type: 0
-    clip: {fileID: 8300000, guid: 526a79687854d11478522d2cb81a772f, type: 3}
+    clip: {fileID: 8300000, guid: 4b6e8f364cbca3e4fbe088eed9ed3eb3, type: 3}
     volume: 1
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
     maxDist3D: 0
     mute: 0
-    loop: 0
-    playOnAwake: 0
+    loop: 1
+    playOnAwake: 1
     source: {fileID: 0}
-  - name: Date3
+  - name: VictoryScreen
     type: 0
-    clip: {fileID: 8300000, guid: 526a79687854d11478522d2cb81a772f, type: 3}
+    clip: {fileID: 8300000, guid: c2159aff9e49ff748b2914a6bb32bf3e, type: 3}
     volume: 1
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
     maxDist3D: 0
     mute: 0
-    loop: 0
-    playOnAwake: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: DefeatScreen
+    type: 0
+    clip: {fileID: 8300000, guid: 0fe77cd3d71929f44b939593887ace89, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
     source: {fileID: 0}
   flowchart: {fileID: 0}

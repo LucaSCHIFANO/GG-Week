@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.Audio;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -32,7 +33,17 @@ public class SoundManager : MonoBehaviour
                 s.source.playOnAwake = s.playOnAwake;
             }
 
-            flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+            try
+            {
+                flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+            }
+            catch
+            {
+                Debug.Log("Sound Manager = No Flow Chart");
+            }
+
+            //LevelManager.cs
+            GameEvents.sceneIsLoaded.AddListener(PlayBackgroundSound);
 
         }
         else
@@ -41,14 +52,21 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void PlayBackgroundSound()
     {
+        StopAllSound();
+        Scene scene = SceneManager.GetActiveScene();
+        Sound s = Array.Find(sounds, sound => sound.name == scene.name);
+        if (s == null) { return; }
+        s.source.Play();
+    }
 
-        //Add the music to play at start
-        //Sound s = Array.Find(sounds, sound => sound.name == "Background");
-        //if (s == null) { return; }
-        //s.source.Play();        
-
+    private void StopAllSound()
+    {
+        foreach (Sound s in sounds)
+        {
+            s.source.Stop();
+        }
     }
 
     //How to use : FindObjectOfType<SoundManager>().PlaySound(name);
@@ -67,7 +85,7 @@ public class SoundManager : MonoBehaviour
     public void timeToPlay()
     {
         string name = flowchart.GetStringVariable("musicName");
-        FindObjectOfType<SoundManager>().PlaySound(name);
+        PlaySound(name);
     }
 }
 

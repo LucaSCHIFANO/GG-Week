@@ -17,14 +17,17 @@ public class AffectionBar : MonoBehaviour
     public GameObject love;
     public GameObject breaked;
 
-    
+    private void Awake()
+    {
+        flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+    }
     public void SetAffection()
     {
         float valueToAdd = flowchart.GetFloatVariable("Affection");
         float value = progressBar.current + valueToAdd;
         flowchart.SetFloatVariable("TotalAffection", value);
         StartCoroutine(FillAnimation(value));
-      //  Debug.Log("Affection Call Function");
+        Debug.Log("Affection Call Function");
 
         if(valueToAdd > 0)
         {
