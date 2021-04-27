@@ -24,7 +24,7 @@ public class AffectionBar : MonoBehaviour
         float value = progressBar.current + valueToAdd;
         flowchart.SetFloatVariable("TotalAffection", value);
         StartCoroutine(FillAnimation(value));
-        Debug.Log("Affection Call Function");
+      //  Debug.Log("Affection Call Function");
 
         if(valueToAdd > 0)
         {
@@ -60,6 +60,6 @@ public class AffectionBar : MonoBehaviour
         }
 
         progressBar.SetCurrentFill(newValue);
-        Debug.Log("debug" + progressBar.current + newValue);
+        //Debug.Log("debug" + progressBar.current + newValue);
     }
 }

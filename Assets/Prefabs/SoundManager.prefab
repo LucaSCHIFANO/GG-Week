@@ -92,3 +92,40 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 1
     source: {fileID: 0}
+  - name: battement_faible
+    type: 1
+    clip: {fileID: 8300000, guid: 2a4fb153663aa51429ca269efa6b5cac, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: battement_normal
+    type: 1
+    clip: {fileID: 8300000, guid: 3ffbd7c350e61504db9ba41d2cf2601f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: battement_rapide
+    type: 1
+    clip: {fileID: 8300000, guid: 4e0c2db879d227e48bd78810410702c0, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  flowchart: {fileID: 0}
