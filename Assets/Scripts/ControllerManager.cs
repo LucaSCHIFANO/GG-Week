@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class ControllerManager : MonoBehaviour
 {
-    ControllerUI controllerUI;
-    WineSimulation glass;
-    ArduinoTest arduino;
+
 
     private bool controllerIsActive = false;
 
@@ -23,7 +21,9 @@ public class ControllerManager : MonoBehaviour
 
 
     private bool hasValue = false;
-
+    private ControllerUI controllerUI;
+    private WineSimulation glass;
+    private ArduinoTest arduino;
     public static ControllerManager instance;
     private void Awake()
     {
