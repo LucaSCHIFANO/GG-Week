@@ -43,19 +43,9 @@ public class SoundManager : MonoBehaviour
     {
 
         //Add the music to play at start
-        Sound s = Array.Find(sounds, sound => sound.name == "Background");
-        if (s == null) { return; }
-        s.source.Play();        
-        
-        //Sound s1 = Array.Find(sounds, sound => sound.name == "SoundEffectTest");
-        //if (s1 == null) { return; }
-        //s1.source.Play();
-        //Sound s2 = Array.Find(sounds, sound => sound.name == "EnvironmentTest");
-        //if (s2 == null) { return; }
-        //s2.source.Play();
-        //Sound s3 = Array.Find(sounds, sound => sound.name == "UITest");
-        //if (s3 == null) { return; }
-        //s3.source.Play();
+        //Sound s = Array.Find(sounds, sound => sound.name == "Background");
+        //if (s == null) { return; }
+        //s.source.Play();        
 
     }
 

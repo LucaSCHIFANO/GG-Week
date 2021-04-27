@@ -14,38 +14,37 @@ public class ArduinoTest : MonoBehaviour
 
     private bool hasSendMessage = false;
     public bool hasStreamOpen = false;
+
+    private string GetStream(int index)
+    {
+        return "COM" + index.ToString();
+    }
     private void Awake()
     {
-        ////initialize stream open
-        //stream = new SerialPort("COM5", 9600);
-        //stream.ReadTimeout = 50;
-        //try
-        //{
-        //    stream.Open();
-        //    hasStreamOpen = true;
-        //}
-        //catch
-        //{
-        //    GameEvents.hasNotArduino.Invoke();
-        //    hasStreamOpen = false;
-        //    Debug.Log("Stream not found");
+        int i = 0;
+        while(i <= 10)
+        {
 
-        //}
-        //initialize stream open
-        stream = new SerialPort("COM3", 9600);
-        stream.ReadTimeout = 50;
-        try
-        {
-            stream.Open();
-            hasStreamOpen = true;
+            i++;
+            stream = new SerialPort(GetStream(i), 9600);
+            stream.ReadTimeout = 50;
+
+            try
+            {
+                stream.Open();
+                hasStreamOpen = true;
+            }
+            catch
+            {
+                hasStreamOpen = false;   
+            }
         }
-        catch
+
+        if (!hasStreamOpen)
         {
-            GameEvents.hasNotArduino.Invoke();
-            hasStreamOpen = false;
             Debug.Log("Stream not found");
+            GameEvents.hasNotArduino.Invoke();
         }
-
     }
 
     private void Update()
