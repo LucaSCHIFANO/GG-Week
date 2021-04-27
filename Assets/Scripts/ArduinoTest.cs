@@ -36,10 +36,14 @@ public class ArduinoTest : MonoBehaviour
             }
             catch
             {
-                GameEvents.hasNotArduino.Invoke();
-                hasStreamOpen = false;
-                Debug.Log("Stream not found");
+                hasStreamOpen = false;   
             }
+        }
+
+        if (!hasStreamOpen)
+        {
+            GameEvents.hasNotArduino.Invoke();
+            Debug.Log("Stream not found");
         }
     }
 
