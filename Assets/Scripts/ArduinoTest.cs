@@ -82,7 +82,7 @@ public class ArduinoTest : MonoBehaviour
             dataString = stream.ReadLine();
             //Debug.Log(dataString);
         }
-        catch (TimeoutException e)
+        catch (TimeoutException)
         {
             dataString = null;
             //Debug.Log("Timeout");
