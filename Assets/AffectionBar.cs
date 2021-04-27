@@ -17,6 +17,8 @@ public class AffectionBar : MonoBehaviour
     public GameObject love;
     public GameObject breaked;
 
+    public float soundDuration = 2.0f;
+
     private void Awake()
     {
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
@@ -27,7 +29,7 @@ public class AffectionBar : MonoBehaviour
         float value = progressBar.current + valueToAdd;
         flowchart.SetFloatVariable("TotalAffection", value);
         StartCoroutine(FillAnimation(value));
-        Debug.Log("Affection Call Function");
+        //Debug.Log("Affection Call Function");
 
         if(valueToAdd > 0)
         {
@@ -42,13 +44,21 @@ public class AffectionBar : MonoBehaviour
     public void PlayPositiveFeedback()
     {
         Instantiate(love, spawnParticule.position, spawnParticule.rotation);
+        StartCoroutine(HeartBeatSound("battement_rapide"));
     }
 
     public void PlayNegativeFeedback()
     {
         Instantiate(breaked, spawnParticule2.position, spawnParticule2.rotation);
+        StartCoroutine(HeartBeatSound("brokenHeart"));
     }
 
+    IEnumerator HeartBeatSound(string name)
+    {
+        FindObjectOfType<SoundManager>().PlaySound(name);
+        yield return new WaitForSeconds(soundDuration);
+        FindObjectOfType<SoundManager>().StopSound(name);
+    }
     IEnumerator FillAnimation(float newValue)
     {
         float timer = 0.0f;

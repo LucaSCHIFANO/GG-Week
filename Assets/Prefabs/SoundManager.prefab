@@ -200,4 +200,16 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 1
     source: {fileID: 0}
+  - name: brokenHeart
+    type: 1
+    clip: {fileID: 8300000, guid: 58ec59c748e7c074588bd36008fdc79a, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
   flowchart: {fileID: 0}
