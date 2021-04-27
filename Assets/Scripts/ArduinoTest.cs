@@ -21,10 +21,10 @@ public class ArduinoTest : MonoBehaviour
     {
         int i = 0;
         //initialize stream open
-        while (!hasStreamOpen)
+        while (i <= 10)
         {
 
-            
+            i++;
             stream = new SerialPort(GetStreamPort(i), 9600);
             stream.ReadTimeout = 50;
             try
@@ -36,7 +36,6 @@ public class ArduinoTest : MonoBehaviour
             {
                 GameEvents.hasNotArduino.Invoke();
                 hasStreamOpen = false;
-                i++;
                 Debug.Log("Stream not found");
 
             }
