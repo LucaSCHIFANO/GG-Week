@@ -15,8 +15,8 @@ public class SoundManager : MonoBehaviour
     {
         if (instance == null)
         {
-            /*instance = this;
-            DontDestroyOnLoad(this.gameObject);*/
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
             foreach (Sound s in sounds)
             {
                 s.source = gameObject.AddComponent<AudioSource>();
@@ -31,6 +31,8 @@ public class SoundManager : MonoBehaviour
                 s.source.loop = s.loop;
                 s.source.playOnAwake = s.playOnAwake;
             }
+
+            flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
 
         }
         else
