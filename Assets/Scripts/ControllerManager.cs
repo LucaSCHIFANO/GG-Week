@@ -17,11 +17,12 @@ public class ControllerManager : MonoBehaviour
     {
         if(arduino.hasStreamOpen == true) { return; }
         //if (!controllerIsActive) { return; }
+        //Debug.Log("controller is active");
 
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
-        Debug.Log("controller is active");
+
         //up
         if (verticalInput > 0)
         {
