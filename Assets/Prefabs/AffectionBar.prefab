@@ -49,6 +49,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13384fa6a6b125649a0226f3b15b311a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowchart: {fileID: 0}
+  progressBar: {fileID: 0}
+  duration: 0.5
+  heart: {fileID: 21300000, guid: 4abebbeb45fa0d5459c6055a17ec9433, type: 3}
+  brokenHeart: {fileID: 21300000, guid: d1f32756f1f81a347af30a56e5b7ace9, type: 3}
+  spawnParticule: {fileID: 0}
+  spawnParticule2: {fileID: 0}
+  love: {fileID: 202012159368434065, guid: 592061de5ef4e954784f9f0b84f8a8ba, type: 3}
+  breaked: {fileID: 9151728530316120363, guid: 56b7a5e22ea9a6e4691a80dbb7bd5e2c, type: 3}
 --- !u!1 &6995532711244787459
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +130,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.76
+  m_FillAmount: 0.99399996
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -197,7 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.1484959, b: 0.1484959, a: 1}
+  m_Color: {r: 0.5849056, g: 0.06345675, b: 0.06345675, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

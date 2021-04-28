@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Background
+  - name: BackgroundTest
     type: 0
     clip: {fileID: 8300000, guid: 524c8f9a6045f26409837b81ec0afdde, type: 3}
     volume: 1
@@ -92,3 +92,184 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 1
     source: {fileID: 0}
+  - name: battement_faible
+    type: 1
+    clip: {fileID: 8300000, guid: 2a4fb153663aa51429ca269efa6b5cac, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: battement_normal
+    type: 1
+    clip: {fileID: 8300000, guid: 3ffbd7c350e61504db9ba41d2cf2601f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: battement_rapide
+    type: 1
+    clip: {fileID: 8300000, guid: b031a350dff1021488185f9c80c8d76b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: SceneChloeSave
+    type: 0
+    clip: {fileID: 8300000, guid: 28269ce5ad0fa1144bf2e4b0bbdab18c, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: SceneJosiSave
+    type: 0
+    clip: {fileID: 8300000, guid: 0cc35154f47e21b45be2b9195cdc3127, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: SceneSireneSave
+    type: 0
+    clip: {fileID: 8300000, guid: 21c21aa62c943324fadc324f950c8449, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: Menu
+    type: 0
+    clip: {fileID: 8300000, guid: 4b6e8f364cbca3e4fbe088eed9ed3eb3, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: VictoryScreen
+    type: 0
+    clip: {fileID: 8300000, guid: c2159aff9e49ff748b2914a6bb32bf3e, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: DefeatScreen
+    type: 0
+    clip: {fileID: 8300000, guid: 0fe77cd3d71929f44b939593887ace89, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 1
+    source: {fileID: 0}
+  - name: brokenHeart
+    type: 1
+    clip: {fileID: 8300000, guid: 58ec59c748e7c074588bd36008fdc79a, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientSceneChloeSave
+    type: 2
+    clip: {fileID: 8300000, guid: c0bff7bb5f922c4409b863aa67096a5b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientMenu
+    type: 2
+    clip: {fileID: 8300000, guid: 9e4afaaade8f1de4fb3db03cc973859b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientSceneJosiSave
+    type: 2
+    clip: {fileID: 8300000, guid: a22b7b37cfb452f44ac0993802cd5c2f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientSceneSireneSave
+    type: 2
+    clip: {fileID: 8300000, guid: 9e4afaaade8f1de4fb3db03cc973859b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: Seagull
+    type: 2
+    clip: {fileID: 8300000, guid: b031a350dff1021488185f9c80c8d76b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  flowchart: {fileID: 0}

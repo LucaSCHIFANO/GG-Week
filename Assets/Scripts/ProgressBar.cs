@@ -31,7 +31,7 @@ public class ProgressBar : MonoBehaviour
     }
     public void SetCurrentFill(float value)
     {
-        if(value >= min && value <= max) {
+        if(value >= min - 1.0f && value <= max + 1.0f) {
             current = value;
             float currentOffset = current - min;
             float maxOffset = max - min;

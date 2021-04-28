@@ -9,9 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 8f8ece19789050548b8506d0f142001c
   - enabled: 1
-    path: Assets/Scenes/VictoryScreen.unity
-    guid: ed1eff119a078cc4c8f0977670bad8a6
+    path: Assets/Scenes/SavePourVoir/SceneChloeSave.unity
+    guid: 8c146f52049933f4c9e7496f61edd2de
+  - enabled: 1
+    path: Assets/Scenes/SavePourVoir/SceneJosiSave.unity
+    guid: 7d4a413a37770e344a0bf85529fb2a88
+  - enabled: 1
+    path: Assets/Scenes/SavePourVoir/SceneSireneSave.unity
+    guid: b0a4f9d018b47f744b3daf669d0e0856
   - enabled: 1
     path: Assets/Scenes/DefeatScreen.unity
     guid: 7fbc2e5f06a2b414387c7b1ab811c27a
+  - enabled: 1
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: ed1eff119a078cc4c8f0977670bad8a6
   m_configObjects: {}

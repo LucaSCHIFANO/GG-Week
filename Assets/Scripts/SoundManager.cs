@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Audio;
+using Fungus;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public Flowchart flowchart;
 
     public static SoundManager instance;
     private void Awake()
@@ -30,6 +33,18 @@ public class SoundManager : MonoBehaviour
                 s.source.playOnAwake = s.playOnAwake;
             }
 
+            try
+            {
+                flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+            }
+            catch
+            {
+                Debug.Log("Sound Manager = No Flow Chart");
+            }
+
+            //LevelManager.cs
+            GameEvents.sceneIsLoaded.AddListener(PlayBackgroundSound);
+
         }
         else
         {
@@ -37,26 +52,34 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void PlayBackgroundSound()
     {
-
-        //Add the music to play at start
-        Sound s = Array.Find(sounds, sound => sound.name == "Background");
+        StopAllSound();
+        Scene scene = SceneManager.GetActiveScene();
+        Sound s = Array.Find(sounds, sound => sound.name == scene.name);
         if (s == null) { return; }
-        s.source.Play();        
-        
-        //Sound s1 = Array.Find(sounds, sound => sound.name == "SoundEffectTest");
-        //if (s1 == null) { return; }
-        //s1.source.Play();
-        //Sound s2 = Array.Find(sounds, sound => sound.name == "EnvironmentTest");
-        //if (s2 == null) { return; }
-        //s2.source.Play();
-        //Sound s3 = Array.Find(sounds, sound => sound.name == "UITest");
-        //if (s3 == null) { return; }
-        //s3.source.Play();
+        s.source.Play();
 
+        string soundName = "Ambient" + scene.name;
+        Debug.Log("sound Name = " + soundName);
+        Sound ambient = Array.Find(sounds, sound => sound.name == "Ambient" + scene.name);
+        if(ambient == null) { return; }
+        ambient.source.Play();
     }
 
+    private void StopAllSound()
+    {
+        foreach (Sound s in sounds)
+        {
+            s.source.Stop();
+        }
+    }
+
+    public void StopSound(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Stop();
+    }
     //How to use : FindObjectOfType<SoundManager>().PlaySound(name);
     public void PlaySound(string name)
     {
@@ -67,6 +90,13 @@ public class SoundManager : MonoBehaviour
             return;
         }
         s.source.Play();
+    }
+
+
+    public void timeToPlay()
+    {
+        string name = flowchart.GetStringVariable("musicName");
+        PlaySound(name);
     }
 }
 
