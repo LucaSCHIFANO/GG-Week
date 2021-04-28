@@ -52,6 +52,18 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //How to use : FindObjectOfType<SoundManager>().PlaySound(name);
+    public void PlaySound(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound : " + name + "not found !\nCheck name spelling");
+            return;
+        }
+        s.source.Play();
+    }
+
     private void PlayBackgroundSound()
     {
         StopAllSound();
@@ -79,17 +91,6 @@ public class SoundManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Stop();
-    }
-    //How to use : FindObjectOfType<SoundManager>().PlaySound(name);
-    public void PlaySound(string name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Sound : " + name + "not found !\nCheck name spelling");
-            return;
-        }
-        s.source.Play();
     }
 
 
