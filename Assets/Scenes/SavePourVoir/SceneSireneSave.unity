@@ -3015,6 +3015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2583845942866719161, guid: 8f9793823ba843b4582e18043a68bb9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2025959881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f9793823ba843b4582e18043a68bb9c, type: 3}
 --- !u!1 &1221279668
@@ -4262,6 +4266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b28b82a3fd8a7a146bbb4f108b57d51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowchart: {fileID: 0}
 --- !u!4 &1928406810
 Transform:
   m_ObjectHideFlags: 0
@@ -4707,6 +4712,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2803747591958405353, guid: 4afd68c63fa33a3468b38b86bb21cb6e, type: 3}
   m_PrefabInstance: {fileID: 2025959879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2025959881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2803747591958405355, guid: 4afd68c63fa33a3468b38b86bb21cb6e, type: 3}
+  m_PrefabInstance: {fileID: 2025959879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025959880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da86de86eb7090449b8594f18b5573e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2055916892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,11 +5808,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -470.31693, y: -391.35266}
+  scrollPos: {x: -57.406067, y: 7.816185}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 483
-  zoom: 0.57999986
+  zoom: 0.45999986
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5806,7 +5822,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2077227575}
   selectedCommands:
-  - {fileID: 2077227581}
+  - {fileID: 2077227919}
   variables:
   - {fileID: 2077227275}
   - {fileID: 2077227282}
@@ -5873,7 +5889,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -589.91675
     y: 25.486301
-    width: 101.72415
+    width: 100.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5914,7 +5930,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 31.498032
     y: -111.75802
-    width: 74.13794
+    width: 76.08696
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6167,7 +6183,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -660.64984
     y: 163.78421
-    width: 74.13794
+    width: 73.913055
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6220,7 +6236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -485.56784
     y: 163.78421
-    width: 65.51724
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6296,7 +6312,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -569.6106
     y: 302.08206
-    width: 67.24138
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6472,7 +6488,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -281.10266
     y: -200.35434
-    width: 82.75863
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6500,7 +6516,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -611.853
     y: -114.24096
-    width: 141.37933
+    width: 139.13046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6699,7 +6715,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 648.4357
     y: -110.33212
-    width: 84.482765
+    width: 84.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6727,7 +6743,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.093025
     y: 208.90576
-    width: 79.31035
+    width: 80.43479
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6878,7 +6894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -23.508848
     y: 129.62527
-    width: 77.58621
+    width: 80.43479
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10210,7 +10226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1064.0049
     y: 705.6437
-    width: 65.51724
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10253,7 +10269,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 607.3698
     y: 779.14716
-    width: 120.689674
+    width: 121.73915
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10566,7 +10582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.66165
     y: 683.7621
-    width: 63.793106
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11146,7 +11162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 219.33536
     y: 811.7735
-    width: 113.79312
+    width: 110.86958
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11206,7 +11222,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 126.51623
     y: 880.07794
-    width: 118.96553
+    width: 117.39133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11293,7 +11309,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.764545
     y: 934.24835
-    width: 113.79312
+    width: 113.0435
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12528,7 +12544,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 632.3696
     y: 1087.137
-    width: 86.20691
+    width: 86.95653
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13383,7 +13399,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 885.4683
     y: 954.769
-    width: 160.34485
+    width: 156.52177
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16390,7 +16406,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1143.5685
     y: 1188.6995
-    width: 67.24138
+    width: 67.39131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17802,7 +17818,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 664.14
     y: 1624.199
-    width: 65.51724
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18524,7 +18540,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1057.7798
     y: 1007.9154
-    width: 115.51726
+    width: 115.217415
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19397,7 +19413,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1203.3802
     y: 1033.0757
-    width: 118.96553
+    width: 115.217415
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20084,7 +20100,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 773.11536
     y: 904.5662
-    width: 120.689674
+    width: 117.39133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21046,7 +21062,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1232.7709
     y: 1373.0568
-    width: 96.551735
+    width: 95.65219
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22667,7 +22683,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1116.1511
     y: 1427.3922
-    width: 105.172424
+    width: 106.52176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22948,7 +22964,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1346.569
     y: 1261.9879
-    width: 101.72415
+    width: 100.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23012,7 +23028,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.91513
     y: 1358.2764
-    width: 67.24138
+    width: 67.39131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25164,7 +25180,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -183.89015
     y: 1622.2236
-    width: 81.03449
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25788,7 +25804,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 48.44608
     y: 1673.8927
-    width: 87.931046
+    width: 86.95653
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26385,7 +26401,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -52.247475
     y: 1653.6569
-    width: 63.793106
+    width: 60.869568
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27008,7 +27024,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -305.01578
     y: 1586.0399
-    width: 75.862076
+    width: 76.08696
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -28433,7 +28449,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 805.1306
     y: 1862.7051
-    width: 100.000015
+    width: 102.17393
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29206,7 +29222,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 696.5853
     y: 1907.6729
-    width: 65.51724
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29827,7 +29843,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 542.41376
     y: 1900.1926
-    width: 72.4138
+    width: 71.739136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30448,7 +30464,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 415.47903
     y: 1845.2104
-    width: 68.96552
+    width: 67.39131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -32903,7 +32919,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1297.7977
     y: 623.4057
-    width: 72.4138
+    width: 71.739136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33510,7 +33526,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 634.1668
     y: 190.6528
-    width: 103.44829
+    width: 104.34784
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33835,7 +33851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 921.58014
     y: 383.80637
-    width: 67.24138
+    width: 67.39131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -33937,7 +33953,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 388.02954
     y: 410.7342
-    width: 67.24138
+    width: 67.39131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34065,7 +34081,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 989.05676
     y: 152.20871
-    width: 65.51724
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34195,7 +34211,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 371.32773
     y: 137.6638
-    width: 63.793106
+    width: 65.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -37945,7 +37961,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1053.2633
     y: 483.68857
-    width: 82.75863
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39651,7 +39667,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -249.23341
     y: 89.89748
-    width: 79.31035
+    width: 78.26088
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39713,7 +39729,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1262.0076
     y: 196.78381
-    width: 81.03449
+    width: 80.43479
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -39765,7 +39781,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1344.6975
     y: 120.664246
-    width: 79.31035
+    width: 80.43479
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -43501,7 +43517,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.1989
     y: 548.35406
-    width: 82.75863
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -44562,7 +44578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 58.19513
     y: 474.91354
-    width: 81.03449
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -45487,7 +45503,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1135.9193
     y: 417.72083
-    width: 81.03449
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -47124,7 +47140,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.69416
     y: 350.29
-    width: 81.03449
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -47940,7 +47956,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 16.732841
     y: 291.00955
-    width: 81.03449
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -49948,7 +49964,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1178.0732
     y: 287.92258
-    width: 82.75863
+    width: 82.6087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -51414,7 +51430,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 364.94177
     y: 642.58795
-    width: 84.482765
+    width: 84.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -51523,7 +51539,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.98535
     y: 597.3417
-    width: 84.482765
+    width: 84.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53351,7 +53367,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 865.15204
     y: 583.1601
-    width: 84.482765
+    width: 84.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53409,7 +53425,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 971.13165
     y: 532.65796
-    width: 84.482765
+    width: 84.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -55680,7 +55696,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -142.8636
     y: 948.77826
-    width: 84.482765
+    width: 84.78262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -57481,7 +57497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 931.707
     y: 1452.9701
-    width: 144.8276
+    width: 145.6522
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
