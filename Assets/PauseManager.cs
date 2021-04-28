@@ -9,6 +9,20 @@ public class PauseManager : MonoBehaviour
     public GameObject layer_Sound;
     public GameObject layer_Video;
     private bool pause = false;
+
+    public static PauseManager instance;
+    private void Start()
+    {
+        if(instance== null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {

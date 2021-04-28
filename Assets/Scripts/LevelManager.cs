@@ -27,6 +27,10 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void NextSceneEnterString(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
     public void NextSceneByName()
     {
         string sceneName = flowchart.GetStringVariable("SceneName");
