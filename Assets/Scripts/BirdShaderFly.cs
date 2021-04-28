@@ -5,6 +5,11 @@ using UnityEngine;
 public class BirdShaderFly : MonoBehaviour
 {
     public float speed = 10.0f;
+
+    private void Start()
+    {
+        FindObjectOfType<SoundManager>().PlaySound("Seagull");
+    }
     // Update is called once per frame
     void Update()
     {
