@@ -59,6 +59,12 @@ public class SoundManager : MonoBehaviour
         Sound s = Array.Find(sounds, sound => sound.name == scene.name);
         if (s == null) { return; }
         s.source.Play();
+
+        string soundName = "Ambient" + scene.name;
+        Debug.Log("sound Name = " + soundName);
+        Sound ambient = Array.Find(sounds, sound => sound.name == "Ambient" + scene.name);
+        if(ambient == null) { return; }
+        ambient.source.Play();
     }
 
     private void StopAllSound()

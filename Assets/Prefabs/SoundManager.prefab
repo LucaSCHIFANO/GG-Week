@@ -131,7 +131,7 @@ MonoBehaviour:
   - name: SceneChloeSave
     type: 0
     clip: {fileID: 8300000, guid: 28269ce5ad0fa1144bf2e4b0bbdab18c, type: 3}
-    volume: 1
+    volume: 0.1
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   - name: SceneJosiSave
     type: 0
     clip: {fileID: 8300000, guid: 0cc35154f47e21b45be2b9195cdc3127, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   - name: SceneSireneSave
     type: 0
     clip: {fileID: 8300000, guid: 21c21aa62c943324fadc324f950c8449, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   - name: Menu
     type: 0
     clip: {fileID: 8300000, guid: 4b6e8f364cbca3e4fbe088eed9ed3eb3, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     spatialBlend: 0
     minDist3D: 0
@@ -209,7 +209,55 @@ MonoBehaviour:
     minDist3D: 0
     maxDist3D: 0
     mute: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientSceneChloeSave
+    type: 2
+    clip: {fileID: 8300000, guid: c0bff7bb5f922c4409b863aa67096a5b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
     loop: 1
-    playOnAwake: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientMenu
+    type: 2
+    clip: {fileID: 8300000, guid: 9e4afaaade8f1de4fb3db03cc973859b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientSceneJosiSave
+    type: 2
+    clip: {fileID: 8300000, guid: a22b7b37cfb452f44ac0993802cd5c2f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: AmbientSceneSireneSave
+    type: 2
+    clip: {fileID: 8300000, guid: 9e4afaaade8f1de4fb3db03cc973859b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    minDist3D: 0
+    maxDist3D: 0
+    mute: 0
+    loop: 1
+    playOnAwake: 0
     source: {fileID: 0}
   flowchart: {fileID: 0}

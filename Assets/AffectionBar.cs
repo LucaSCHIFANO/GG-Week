@@ -22,6 +22,8 @@ public class AffectionBar : MonoBehaviour
     private void Awake()
     {
         flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+        spawnParticule = GameObject.Find("SpawnHeart").GetComponent<Transform>();
+        spawnParticule2 = GameObject.Find("SpawnHeart (1)").GetComponent<Transform>();
     }
     public void SetAffection()
     {
